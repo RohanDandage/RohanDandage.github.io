@@ -1,0 +1,387 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.vertical-center {
+  /* min-height: 100%;
+  min-height: 100vh; */
+
+  display: flex;
+  align-items: center;
+}
+
+.body {
+  /* min-width: 1000px; */
+  /* min-width: 1000px; Set the minimum width here */
+  /* border: 1px solid #ccc; Optional: Add a border for visualization */
+  /* padding: 20px; Optional: Add padding for better appearance */  
+}
+
+.content {
+    margin: auto;
+}
+
+.border-left {
+    border-left: 10px solid #000080;
+    margin-left: 20px;
+    padding-left: 30px;
+}
+
+.big-text {
+    font-size: 200%;
+}
+
+.mid-text {
+    font-size: 125%;
+}
+
+.links {
+    margin-top: 40px;
+    line-height: 2em;
+}
+
+a:link, a:visited, a:active, a:hover {
+    color: black;
+    -webkit-transition: all ease-in-out 0.3s;
+    -moz-transition: all ease-in-out 0.3s;
+    -o-transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #0000CD;
+}
+
+/*intro snap*/
+.intro {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  z-index: 9997;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.intro .background {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+/*.intro .load {
+  position: absolute;
+  z-index: 9999 !important;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: black;
+  -webkit-transform: translate3d(calc(-100% - 1px), 0, 0);
+  transform: translate3d(calc(-100% - 1px), 0, 0);
+}*/
+.intro .logo {
+  margin: auto;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  text-align: center;
+}
+.intro .logo img {
+  fill: #fff;
+  opacity: 0;
+}
+
+/*buttons*/
+#container {
+    /*background: green;*/
+    /*height: 200px;*/
+}
+.brightness {
+    background-color: white;
+    display: inline-block;
+   
+}
+.brightness img:hover {
+    opacity: 0.7;
+}
+
+
+/* sections */
+.sep {
+  /* display: block; */
+  border: 1px solid #ececec;
+  width: 100%;
+}
+/* wrapper */
+#projects {
+  height: 100vh;
+  padding: 0px 5px;
+  /* margin: 10; */
+  border-bottom: 1px solid #ececec;
+  h2 {
+      /* color: $heading; */
+      margin-bottom: 50px;
+  }
+}
+
+#research {
+}
+
+#coding {
+}
+
+#blogs {
+}
+
+#contact {
+  /* margin: 10; */
+}
+
+/* content */
+
+/* Note: should be in the html because it should be overriding 
+.art_and_gallery {
+  display: flex;
+  flex-wrap: nowrap; */
+  /* wrap if width lower than */
+  /* max-width: 200; 
+  justify-content: center;
+} */
+
+.art_and_gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:center;
+  height: 50vh
+}
+
+/* Adjust the image size for smaller screens */
+@media screen and (max-width: 600px) {
+  .art_and_gallery {
+    /* height: 80vh */
+  }
+}
+
+.art {
+  /* for centering */
+  flex: 1;  
+  display: flex;
+  align-items: center; /*vertical*/
+  justify-content: center;  
+  /* text-align: center; */
+  color: #fff;  
+  /* height: 50vh; */
+  /* width:40%; */
+  /* for testing flex */
+  /* background-color: #3498db; */
+}
+
+.art-image1 {
+  width: 50%;
+  min-width: 250px;
+  height:auto
+}
+
+.art-image2 {
+  width: 50%;
+  min-width: 250px;
+  height:auto
+}
+
+.art-image3 {
+  width: 50%;
+  min-width: 250px;
+  height:auto
+}
+
+.item-container {
+  display: block;
+  -webkit-box-align: center;
+  align-items: center;
+  width:50%;
+  height: auto;
+  min-width:300px;
+  /* margin: 0 0 60px; */
+  padding: 0;
+}
+
+.item-container:hover .item-static {
+  opacity: 0;
+}
+
+.item-container:hover .item-img-wrapper {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  -webkit-transform: scale(1.06);
+          transform: scale(1.06);
+}
+
+.item-container:hover .item-img-wrapper:after {
+  opacity: 1;
+}
+
+/* Adjust the image size for smaller screens */
+@media screen and (max-width: 600px) {
+  .item-container {
+    min-width:250px;    
+    /* width:50px; */
+    /* height: 80%; 
+    width: 80%; */
+  }
+}
+
+.item-static {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  /* width: 40vh;
+  height: 40vh; */
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain aspect ratio */  
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.item-animated {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  /* width: 40vh;
+  height: 40vh; */
+  max-width: 100%; /* Ensure images don't exceed the container width */
+  height: auto; /* Maintain aspect ratio */  
+}
+
+.item-img-wrapper {
+  position: relative;
+  -webkit-transition: -webkit-transform 0.15s ease;
+  transition: -webkit-transform 0.15s ease;
+  transition: transform 0.15s ease;
+  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
+  padding-bottom: 100%;
+}
+
+.item-img-wrapper:before {
+  content: '';
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #fdfdfd, #f7f7f7);
+}
+
+.item-img-wrapper:after {
+  content: '';
+  top: calc(10% + 20px);
+  left: calc(10% + 20px);
+  z-index: -5;
+  height: calc(80% - 40px);
+  width: calc(80% - 40px);
+  opacity: 0;
+  -webkit-transition: opacity 0.15s ease;
+  transition: opacity 0.15s ease;
+    /* x | y | width | height | <color> */
+    box-shadow: 0px 200px 20px 200px rgba(121, 121, 121, 0.7);
+}
+
+@media screen and (max-width: 1000px) {
+  .item-img-wrapper:after {
+    /* less shaddow */
+    box-shadow: 0 2px 64px 10px rgba(0, 0, 0, 0.70);
+  }
+}
+
+.gallery {
+  flex: 1;
+  /* height:10%; */
+  width:30%;
+  color: #fff;  
+  /* overflow-x: auto;    */
+  /* for testing flex */
+  /* background-color: #e74c3c; */
+}
+
+.link {
+  position: absolute;
+  left: 50%;
+}
+
+.next_button {
+  position: absolute;
+  left: 50%;
+  color:lightgray !important; 
+  font-size: 25px;
+}
+
+.next_button1 {bottom: 2%;}
+.next_button2 {top: 195%;}
+.next_button3 {top: 295%}
+.next_button4 {top: 395%;}
+.next_button5 {top: 512%}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 500px) {
+  .art {
+    width:0;
+  }
+  .art-image1{
+    position: absolute;
+    top: 114%;
+    left: 8%;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+  }
+  .art-image2{
+    position: absolute;
+    top: 214%;
+    left: 8%;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+  }
+  .art-image3{
+    position: absolute;
+    top: 314%;
+    left: 8%;
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+  }
+
+  .gallery {
+    /* less shaddow */
+    position: absolute;
+    left: 50px;
+    width: 95%;
+    height: 55vh;
+  }
+  .link {
+    position: absolute;
+    left: unset;
+    right: 20px;
+  }
+  .sep {
+    border: 0px;
+  }
+  #projects {
+    border: 0px;
+  }
+  .next_button1 {bottom: 2%;}
+  .next_button2 {top: 198%;}
+  .next_button3 {top: 298%}
+  .next_button4 {top: 398%;}
+  .next_button5 {top: 498%}
+  
+}
+
