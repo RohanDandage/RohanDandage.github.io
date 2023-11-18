@@ -13,6 +13,8 @@ html {
 }
 
 .body {
+  margin: 0;
+  padding: 0;  
   /* min-width: 1000px; */
   /* min-width: 1000px; Set the minimum width here */
   /* border: 1px solid #ccc; Optional: Add a border for visualization */
@@ -103,10 +105,7 @@ a:hover {
 }
 
 /*buttons*/
-#container {
-    /*background: green;*/
-    /*height: 200px;*/
-}
+
 .brightness {
     background-color: white;
     display: inline-block;
@@ -135,6 +134,14 @@ a:hover {
       /* color: $heading; */
       margin-bottom: 50px;
   }
+}
+
+#lead {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: left;  
 }
 
 #research {
@@ -346,7 +353,7 @@ a:hover {
 .next_button2 {top: 195%;}
 .next_button3 {top: 295%}
 .next_button4 {top: 395%;}
-.next_button5 {top: 515%}
+.next_button5 {top: 495%}
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {

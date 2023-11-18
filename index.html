@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=1000px, initial-scale=1.0, user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
     <title>Rohan Dandage</title>
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -35,31 +35,26 @@
     </script>
 
     <!-- End intro -->
-    <div id="lead">        
-        <div id="lead-content">
-            <div class="container vertical-center">
-                <div class="content">
-                    <div class="border-left">
-                        <div class="row">
-                            <span class="big-text">
-                                <a href="#" style="color:black;pointer-events:none">Rohan Dandage</a>
-                            </span>
-                        </div>
+    <div id="projects">        
+        <div id="lead">
+            <div class="border-left">
+                <div class="row">
+                    <span class="big-text">
+                        <a href="#" style="color:black;pointer-events:none">Rohan Dandage</a>
+                    </span>
+                </div>
+            </div>
+            <div class="links">
+                <div class="border-left">
+                    <!-- TODO: scroll smoothly -->
+                    <div class="row"><span class="mid-text">
+                        <a style="text-align:left" href="#research">Research🔬</a></span>
+                    </div> 
+                    <div class="row"><span class="mid-text">
+                        <a style="text-align:left" href="#coding">Coding 💻</a></span>
                     </div>
-    
-                    <div class="links">
-                        <div class="border-left">
-                            <!-- TODO: scroll smoothly -->
-                            <div class="row"><span class="mid-text">
-                                <a style="text-align:left" href="#research">Research🔬</a></span>
-                            </div> 
-                            <div class="row"><span class="mid-text">
-                                <a style="text-align:left" href="#coding">Coding 💻</a></span>
-                            </div>
-                            <div class="row"><span class="mid-text">
-                                <a style="text-align:left" href="#blogs">Writing 📝</a></span>
-                            </div>
-                        </div>
+                    <div class="row"><span class="mid-text">
+                        <a style="text-align:left" href="#blogs">Writing 📝</a></span>
                     </div>
                 </div>
             </div>
@@ -72,8 +67,8 @@
     <hr class='sep'>
     
     <!-- Research -->   
-    <div id="projects" class="background-alt" >
-        <div id="research" class="background-alt" >
+    <div id="projects">
+        <div id="research">
             <h2 class="project-heading"><br><br>Research🔬</h2>
             <div class="art_and_gallery">
                 <div class="art">
@@ -228,8 +223,8 @@
         </div>
     </div>
     
-    <div id="projects" class="background-alt" >
-        <div id="coding" class="background-alt">
+    <div id="projects" >
+        <div id="coding">
             <h2 class="project-heading"><br><br>Coding💻</h2>
         <div class="art_and_gallery">
             <div class="art">
@@ -410,8 +405,8 @@
     </div>
     <!-- End #codng -->
 
-    <div id="projects" class="background-alt" >
-        <div id="blogs" class="background-alt">
+    <div id="projects">
+        <div id="blogs">
             <h2 class="project-heading"><br><br>Writing📝</h2>
         </div>
         <div class="art_and_gallery">
@@ -474,10 +469,10 @@
         <a href="#contact" class="next_button next_button4">⬤</a>
     </div>
     <!-- End #decoding -->
-    <div id="projects" class="background-alt" >
+    <div id="projects">
 
-        <div id="contact" class="background-alt" >
-            <h2 class="big-text" style="margin-bottom: 50px;color:#000000"><br><br>Contact<br><br></h2>
+        <div id="contact" >
+            <h2 class="big-text" style="margin-bottom: 50px;color:#000000"><br><br>Contact<br></h2>
             <div class="row">
                 <div style="text-align: center; font-size: 40px">
                     <!-- TODO: make them visible. -->
@@ -486,7 +481,7 @@
                     <a href="https://github.com/rraadd88" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>↗</a>
                 </div>
             </div>
-            <br><br><br><br>
+            <br>
             <div id="contact">
                 <a style="font-size: 40px; color:#525151"><i class="fa fa-envelope" aria-hidden="true"></i></a>
                 <div id="contact-form">
@@ -500,27 +495,23 @@
                 <!-- End #contact-form -->
             </div>
         </div>
-    </div>
-    <!-- End #contact -->
-    <link rel="stylesheet" href="css/gallery_basic.css">
-    <script src="js/gallery_basic.js"></script>
-
-    <footer>
         <div class="container">
             <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p style="color:#808080">
+                    <p style="color:#808080;text-align: center;">
                         Copyright &copy; <span id="current-year"><script>document.write(/\d{4}/.exec(Date())[0])</script></span> Rohan Dandage
                     </p>
-                </div>
-                <a href="#" class="next_button next_button5">⬤</a>                
+                <a href="#" class="next_button">⬤</a>                
                 <!-- <div class="top" style="color:#000000;position: absolute;right: 10%;">
                     <span id="to-top">⇡
                     </span>
                 </div> -->
             </div>
         </div>
-    </footer>
+    </div>
+    <!-- End #contact -->
+    <link rel="stylesheet" href="css/gallery_basic.css">
+    <script src="js/gallery_basic.js"></script>
+
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
