@@ -5,9 +5,11 @@ html {
 .vertical-center {
   /* min-height: 100%;
   min-height: 100vh; */
-
+  width: 400px;
   display: flex;
   align-items: center;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .body {
@@ -28,11 +30,11 @@ html {
 }
 
 .big-text {
-    font-size: 200%;
+    font-size: 30px;
 }
 
 .mid-text {
-    font-size: 125%;
+    font-size: 20px;
 }
 
 .links {
@@ -120,13 +122,15 @@ a:hover {
   /* display: block; */
   border: 1px solid #ececec;
   width: 100%;
+  margin:0px;
 }
 /* wrapper */
 #projects {
   height: 100vh;
+  min-width: 350px;
   padding: 0px 5px;
   /* margin: 10; */
-  border-bottom: 1px solid #ececec;
+  border: 0px;
   h2 {
       /* color: $heading; */
       margin-bottom: 50px;
@@ -161,17 +165,33 @@ a:hover {
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  height: 50vh
+  height: 70vh
+}
+.project-heading{
+  /* @extend .big-text; */
+  /* text-align: center;
+  font-size: 200%; */
+  font-weight: normal;
+  font-size: 30px;
+  margin:0px;
+  /* z-index: 10; */
 }
 
 /* Adjust the image size for smaller screens */
-@media screen and (max-width: 600px) {
-  .art_and_gallery {
-    /* height: 80vh */
+@media screen and (max-width: 480px) {
+  .project-heading{
+    position:relative;
+    left: 50px;
   }
 }
 
-.art {
+@media screen and (max-width: 600px) {
+  .art_and_gallery {
+    /* height: 80vh */
+    }
+  }
+
+  .art {
   /* for centering */
   flex: 1;  
   display: flex;
@@ -185,19 +205,18 @@ a:hover {
   /* background-color: #3498db; */
 }
 
-.art-image1 {
+.art-image1{
   width: 50%;
   min-width: 250px;
   height:auto
 }
 
-.art-image2 {
+.art-image2{
   width: 50%;
   min-width: 250px;
   height:auto
 }
-
-.art-image3 {
+.art-image3{
   width: 50%;
   min-width: 250px;
   height:auto
@@ -243,7 +262,7 @@ a:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 2;
+  z-index: 0;
   /* width: 40vh;
   height: 40vh; */
   max-width: 100%; /* Ensure images don't exceed the container width */
@@ -256,7 +275,7 @@ a:hover {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 1;
+  z-index: 0;
   /* width: 40vh;
   height: 40vh; */
   max-width: 100%; /* Ensure images don't exceed the container width */
@@ -274,7 +293,7 @@ a:hover {
 
 .item-img-wrapper:before {
   content: '';
-  z-index: 1;
+  z-index: 0;
   height: 100%;
   width: 100%;
   background: linear-gradient(45deg, #fdfdfd, #f7f7f7);
@@ -323,40 +342,40 @@ a:hover {
   font-size: 25px;
 }
 
-.next_button1 {bottom: 2%;}
+.next_button1 {bottom: 2.5%;}
 .next_button2 {top: 195%;}
 .next_button3 {top: 295%}
 .next_button4 {top: 395%;}
-.next_button5 {top: 512%}
+.next_button5 {top: 515%}
 
 /* Media query for smaller screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .art {
     width:0;
   }
   .art-image1{
     position: absolute;
-    top: 114%;
+    top: 105%;
     left: 8%;
-    height: 100px;
-    width: 100px;
-    min-width: 100px;
+    height: 110px;
+    width: 110px;
+    min-width: 110px;
   }
   .art-image2{
     position: absolute;
-    top: 214%;
+    top: 205%;
     left: 8%;
-    height: 100px;
-    width: 100px;
-    min-width: 100px;
+    height: 110px;
+    width: 110px;
+    min-width: 110px;
   }
   .art-image3{
     position: absolute;
-    top: 314%;
+    top: 305%;
     left: 8%;
-    height: 100px;
-    width: 100px;
-    min-width: 100px;
+    height: 110px;
+    width: 110px;
+    min-width: 110px;
   }
 
   .gallery {
@@ -364,7 +383,7 @@ a:hover {
     position: absolute;
     left: 50px;
     width: 95%;
-    height: 55vh;
+    height: 70vh;
   }
   .link {
     position: absolute;
@@ -374,14 +393,11 @@ a:hover {
   .sep {
     border: 0px;
   }
-  #projects {
-    border: 0px;
-  }
-  .next_button1 {bottom: 2%;}
-  .next_button2 {top: 198%;}
+  /* .next_button1 {bottom: 2%;}
+  .next_button2 {top: 195%;}
   .next_button3 {top: 298%}
   .next_button4 {top: 398%;}
-  .next_button5 {top: 498%}
+  .next_button5 {top: 498%} */
   
 }
 

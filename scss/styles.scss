@@ -316,7 +316,6 @@ footer {
 }
 
 .heading {
-    position: relative;
     display: inline-block;
     font-size: 2em;
     font-weight: 300;
@@ -348,11 +347,11 @@ footer {
 #lead {
     position: relative;
     height: 100vh;
-    min-height: 500px;
-    max-height: 1080px;
+    // min-height: 500px;
+    // max-height: 1080px;
     // background: url(../images/lead-bg.jpg);
     background-size: cover;
-    padding: 15px;
+    // padding: 15px;
     overflow: hidden;
 }
 

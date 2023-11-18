@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- <meta name="viewport" content="width=1000px, initial-scale=1.0, user-scalable=no"> -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <title>Rohan Dandage</title>
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -32,40 +32,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>    
     
     <script>
-      function enableHorizontalScroll(containerId) {
-        let isMouseDown = false;
-        let startX;
-        let scrollLeft;
-    
-        const container = document.getElementById(containerId);
-    
-        container.addEventListener('mousedown', (e) => {
-          isMouseDown = true;
-          startX = e.pageX - container.offsetLeft;
-          scrollLeft = container.scrollLeft;
-        });
-    
-        container.addEventListener('mouseup', () => {
-          isMouseDown = false;
-        });
-    
-        container.addEventListener('mouseleave', () => {
-          isMouseDown = false;
-        });
-    
-        container.addEventListener('mousemove', (e) => {
-          if (!isMouseDown) return;
-          e.preventDefault();
-          const x = e.pageX - container.offsetLeft;
-          const walk = (x - startX) * 3; // Adjust the multiplier for faster/slower scrolling
-          container.scrollLeft = scrollLeft - walk;
-        });
-      }
-    
-      enableHorizontalScroll('scroll-container');
     </script>
-
-
 
     <!-- End intro -->
     <div id="lead">        
@@ -73,7 +40,11 @@
             <div class="container vertical-center">
                 <div class="content">
                     <div class="border-left">
-                        <div class="row"><span class="big-text"><a href="#" style="color:black;pointer-events:none">Rohan Dandage</a></span></div>
+                        <div class="row">
+                            <span class="big-text">
+                                <a href="#" style="color:black;pointer-events:none">Rohan Dandage</a>
+                            </span>
+                        </div>
                     </div>
     
                     <div class="links">
@@ -86,7 +57,7 @@
                                 <a style="text-align:left" href="#coding">Coding 💻</a></span>
                             </div>
                             <div class="row"><span class="mid-text">
-                                <a style="text-align:left" href="#blogs">Decoding 📝</a></span>
+                                <a style="text-align:left" href="#blogs">Writing 📝</a></span>
                             </div>
                         </div>
                     </div>
@@ -102,165 +73,165 @@
     
     <!-- Research -->   
     <div id="projects" class="background-alt" >
-
-    <div id="research" class="background-alt" >
-        <h2 class="heading"><br><br>Research🔬</h2>
-        <div class="art_and_gallery">
-            <div class="art">
-                <img class="art-image1" src="assets/research.svg.jpg" alt=""/>
-            </div>
-            <div class="gallery" style="flex: 1;  display: flex; align-items: center">
-                <div class="row" style="width: 90%;overflow-x: auto;">
-                    <div class="filter-btn-container">
-                        <!-- Filter buttons -->
-                        <button class="filter-btn" onclick="filterGallery('gallery1', 'cansynbio');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Cancer systems biology</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery1', 'sysbio');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Systems biology</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery1', 'biophy');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Biophysics</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery1', 'all');toggleActive(this,'all')">
-                            <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                        </button>
-                    </div>
-                    <!-- Gallery 1 -->
-                    
-                    <div class="gallery-container" id="gallery1">
-                        <div class="gallery-item sysbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop6.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research/2016_01.png" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Need for multi-level integration</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.1016/j.cels.2016.01.010" target=”_blank”>Cell Systems↗</a></div>
-                                    <div class="gallery-item-job-title">2016</div>
-                                </div>    
-                            </li>
-                        </div>
-
-                        <div class="gallery-item cansynbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop4.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research_crop4.jpg"/>
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Chromosome arm aneuploidies as genetic vulnerabilities of triple-negative breast cancer</div>
-                                    <div class="gallery-item-details"><a href="https://doi.org/10.1158/1538-7445.AM2023-1413" target=”_blank”>Cancer Research↗</a></div>
-                                    <div class="gallery-item-job-title">2023</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item cansynbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Identifying features of genome evolution to exploit cancer vulnerabilities</div>
-                                    <div class="gallery-item-details"><a href="https://doi.org/10.1016/j.cels.2021.08.007" target=”_blank”>Cell Systems↗</a></div>
-                                    <div class="gallery-item-job-title">2021</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item sysbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop3.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research_crop3.jpg" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Frequent assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid</div>
-                                    <div class="gallery-item-details"><a href="https://doi.org/10.1093/molbev/msaa298" target=”_blank”>Molecular Biology and Evolution↗</a></div>
-                                    <div class="gallery-item-job-title">2020</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item cansynbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Paralog dependency indirectly affects the robustness of human cells</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.15252/msb.20198871" target=”_blank”>Molecular Systems Biology↗</a></div>
-                                    <div class="gallery-item-job-title">2019</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item sysbio">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research/2018_02.png" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">beditor: A computational workflow for designing libraries of guide RNAs for CRISPR base editing</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.1534/genetics.119.302089" target=”_blank”>Genetics↗</a></div>
-                                    <div class="gallery-item-job-title">2019</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item biophy">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research/2018_01.png" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Differential strengths of molecular determinants guide environment specific mutational fates</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.1371/journal.pgen.1007419" target=”_blank”>PLoS Genetics↗</a></div>
-                                    <div class="gallery-item-job-title">2018</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item biophy">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research/2016_02.png" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">dms2dfe : Comprehensive workflow for the analysis of deep mutational scanning data</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.21105/joss.00362" target=”_blank”>Journal of Open Source Software↗</a></div>
-                                    <div class="gallery-item-job-title">2017</div>
-                                </div>    
-                            </li>
-                        </div>
-                        <div class="gallery-item biophy">
-                            <li class="gallery-item-container">
-                                <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/research_crop1.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/research/2015_01.png" alt="" />
-                                </div>
-                                <div class="gallery-item-container-text-textbox">
-                                    <div class="gallery-item-full-name">Classification of chemical chaperones based on their effect on protein folding landscapes</div>
-                                    <div class="gallery-item-details"><a href="http://dx.doi.org/10.1021/cb500798y" target=”_blank”>ACS chemical biology↗</a></div>
-                                    <div class="gallery-item-job-title">2015</div>
-                                </div>    
-                            </li>
-                        </div>
-                    </div>
+        <div id="research" class="background-alt" >
+            <h2 class="project-heading"><br><br>Research🔬</h2>
+            <div class="art_and_gallery">
+                <div class="art">
+                    <img class="art-image1" src="assets/research.svg.jpg" alt=""/>
                 </div>
+                <div class="gallery" style="flex: 1;  display: flex; align-items: center">
+                    <div class="row" style="width: 90%;overflow-x: auto;">
+                        <div class="filter-btn-container">
+                            <!-- Filter buttons -->
+                            <button class="filter-btn" onclick="filterGallery('gallery1', 'cansynbio');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Cancer systems biology</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery1', 'sysbio');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Systems biology</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery1', 'biophy');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Biophysics</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery1', 'all');toggleActive(this,'all')">
+                                <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
+                            </button>
+                        </div>
+                        <!-- Gallery 1 -->
+                        
+                        <div class="gallery-container" id="gallery1">
+                            <div class="gallery-item sysbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop6.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2016_01.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Need for multi-level integration</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1016/j.cels.2016.01.010" target=”_blank”>Cell Systems↗</a></div>
+                                        <div class="gallery-item-job-title">2016</div>
+                                    </div>    
+                                </li>
+                            </div>
+
+                            <div class="gallery-item cansynbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop4.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg"/>
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Chromosome arm aneuploidies as genetic vulnerabilities of triple-negative breast cancer</div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1158/1538-7445.AM2023-1413" target=”_blank”>Cancer Research↗</a></div>
+                                        <div class="gallery-item-job-title">2023</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item cansynbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Identifying features of genome evolution to exploit cancer vulnerabilities</div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1016/j.cels.2021.08.007" target=”_blank”>Cell Systems↗</a></div>
+                                        <div class="gallery-item-job-title">2021</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item sysbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop3.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research_crop3.jpg" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Frequent assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid</div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1093/molbev/msaa298" target=”_blank”>Molecular Biology and Evolution↗</a></div>
+                                        <div class="gallery-item-job-title">2020</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item cansynbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Paralog dependency indirectly affects the robustness of human cells</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.15252/msb.20198871" target=”_blank”>Molecular Systems Biology↗</a></div>
+                                        <div class="gallery-item-job-title">2019</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item sysbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2018_02.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">beditor: A computational workflow for designing libraries of guide RNAs for CRISPR base editing</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1534/genetics.119.302089" target=”_blank”>Genetics↗</a></div>
+                                        <div class="gallery-item-job-title">2019</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item biophy">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2018_01.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Differential strengths of molecular determinants guide environment specific mutational fates</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1371/journal.pgen.1007419" target=”_blank”>PLoS Genetics↗</a></div>
+                                        <div class="gallery-item-job-title">2018</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item biophy">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2016_02.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">dms2dfe : Comprehensive workflow for the analysis of deep mutational scanning data</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.21105/joss.00362" target=”_blank”>Journal of Open Source Software↗</a></div>
+                                        <div class="gallery-item-job-title">2017</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item biophy">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop1.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2015_01.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Classification of chemical chaperones based on their effect on protein folding landscapes</div>
+                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1021/cb500798y" target=”_blank”>ACS chemical biology↗</a></div>
+                                        <div class="gallery-item-job-title">2015</div>
+                                    </div>    
+                                </li>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+                <!-- end of gallery -->
             </div> 
-            <!-- end of gallery -->
-        </div> 
-        <!-- end of art_gallery -->
-        <a href="https://scholar.google.ca/citations?user=ZCg1Lq8AAAAJ&hl=en&oi=ao" target=”_blank” class="mid-text link">Google Scholar↗</a>
-        <a href="#coding" class="next_button next_button2">⬤</a>
+            <!-- end of art_gallery -->
+            <a href="https://scholar.google.ca/citations?user=ZCg1Lq8AAAAJ&hl=en&oi=ao" target=”_blank” class="mid-text link">Google Scholar↗</a>
+            <a href="#coding" class="next_button next_button2">⬤</a>
+        </div>
     </div>
-</div>
     
     <div id="projects" class="background-alt" >
-        <div id="coding" class="background-alt"><h2 class="heading"><br><br>Coding💻</h2>
-        <div class="art_and_gallery" style="display: flex;flex-wrap: wrap;max-width: 200;justify-content: center;height: 50vh">
+        <div id="coding" class="background-alt">
+            <h2 class="project-heading"><br><br>Coding💻</h2>
+        <div class="art_and_gallery">
             <div class="art">
                 <img class="art-image2" src="assets/coding.svg.jpg" alt=""/>
             </div>
@@ -269,7 +240,7 @@
                     <div class="filter-btn-container">
                         <!-- Filter buttons -->
                         <button class="filter-btn" onclick="filterGallery('gallery2', 'tools');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Toolboxes</a></span>
+                            <span class="mid-text"><a href="javascript:void(0);">Methods</a></span>
                         </button>
                         <button class="filter-btn" onclick="filterGallery('gallery2', 'viz');toggleActive(this)">
                             <span class="mid-text"><a href="javascript:void(0);">Visualizations</a></span>
@@ -441,9 +412,9 @@
 
     <div id="projects" class="background-alt" >
         <div id="blogs" class="background-alt">
-            <h2 class="heading"><br><br>Decoding📝</h2>
+            <h2 class="project-heading"><br><br>Writing📝</h2>
         </div>
-        <div class="art_and_gallery" style="display: flex;flex-wrap: wrap;max-width: 200;justify-content: center;height: 50vh">
+        <div class="art_and_gallery">
             <div class="art">
                 <img class="art-image3" src="assets/decoding.svg.jpg" alt=""/>
             </div>
@@ -506,7 +477,7 @@
     <div id="projects" class="background-alt" >
 
         <div id="contact" class="background-alt" >
-            <h2 class="heading" style="margin-bottom: 50px;text-align: center;color:#000000"><br><br>Contact<br><br></h2>
+            <h2 class="big-text" style="margin-bottom: 50px;color:#000000"><br><br>Contact<br><br></h2>
             <div class="row">
                 <div style="text-align: center; font-size: 40px">
                     <!-- TODO: make them visible. -->
