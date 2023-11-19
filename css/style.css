@@ -2,10 +2,11 @@ html {
   scroll-behavior: smooth;
 }
 
+
 .vertical-center {
   /* min-height: 100%;
   min-height: 100vh; */
-  width: 400px;
+  /* width: 400px; */
   display: flex;
   align-items: center;
   margin-left: 0px;
@@ -13,12 +14,16 @@ html {
 }
 
 .body {
-  margin: 0;
-  padding: 0;  
+  margin: 0px;
+  padding: 0px;  
   /* min-width: 1000px; */
   /* min-width: 1000px; Set the minimum width here */
   /* border: 1px solid #ccc; Optional: Add a border for visualization */
-  /* padding: 20px; Optional: Add padding for better appearance */  
+}
+
+html, body {
+  width:100%;
+  min-width: 400px !important;
 }
 
 .content {
@@ -123,12 +128,13 @@ a:hover {
   width: 100%;
   margin:0px;
 }
+
 /* wrapper */
 #projects {
   height: 100vh;
   min-width: 350px;
-  padding: 0px 5px;
-  /* margin: 10; */
+  padding: 0px;
+  margin: 0px;
   border: 0px;
   h2 {
       /* color: $heading; */
@@ -141,7 +147,8 @@ a:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: left;  
+  text-align: left; 
+  min-width: 250px; 
 }
 
 #research {
@@ -176,11 +183,12 @@ a:hover {
 }
 .project-heading{
   /* @extend .big-text; */
-  /* text-align: center;
+  /* 
   font-size: 200%; */
   font-weight: normal;
   font-size: 30px;
   margin:0px;
+  text-align: center;
   /* z-index: 10; */
 }
 
@@ -237,7 +245,7 @@ a:hover {
   height: auto;
   min-width:300px;
   /* margin: 0 0 60px; */
-  padding: 0;
+  padding: 0px;
 }
 
 .item-container:hover .item-static {
@@ -339,21 +347,38 @@ a:hover {
 
 .link {
   position: absolute;
-  left: 50%;
+  /* left: 50%; */
+  right:7%;
+  text-align: right;
 }
 
 .next_button {
+  /* position: absolute;
+  left: 50%;*/
   position: absolute;
-  left: 50%;
+  left:50%;
+  font-size: 25px; 
+  margin-top: auto;
+  margin-bottom:0vh;
   color:lightgray !important; 
-  font-size: 25px;
+  /* z-index: -1; */
 }
 
-.next_button1 {bottom: 2.5%;}
-.next_button2 {top: 195%;}
-.next_button3 {top: 295%}
-.next_button4 {top: 395%;}
-.next_button5 {top: 495%}
+.next_button1 {
+  bottom: 9%;
+}
+/* .next_button2 {
+  top: 195%;
+}
+.next_button3 {
+  top: 295%
+}
+.next_button4 {
+  top: 395%;
+}
+.next_button5 {
+  top: 495%
+} */
 
 /* Media query for smaller screens */
 @media screen and (max-width: 600px) {

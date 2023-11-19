@@ -71,9 +71,10 @@
 /* end of Scrollbar Styling */
 
 .gallery-item {
-  flex: 0 0 30vh; /* Fixed width for gallery item */
-  height: 40%;
-  width: 30%;
+  flex: 0 0 40vh; /* Fixed width for gallery item */
+  /* height: 50%; */
+  /* min-height: 40%; */
+  /* width: 50%; */
   overflow: hidden;
   /* border-radius: 5px; */
   /* cursor: pointer; */
@@ -195,6 +196,7 @@ DEBUG: need to use size of the image after the clipping, instead of before the c
   left: 16px;
   right: 16px;
   z-index:2;
+  text-align: center;
 }
 
 .gallery-item-details{
