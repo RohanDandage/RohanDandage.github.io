@@ -1,6 +1,6 @@
 ## Known issues in the fork
 
-- [ ] Images may glitch if the width of the screen is too large or too small.  
+- [ ] Display of images may glitch if the width of the screen is too large or too small.  
 - [ ] Images overflow not explicitely contrained.  
 - [ ] Pointer interactions may vary.  
 - [ ] Latency in loading due to unused elements.  
