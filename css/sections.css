@@ -12,7 +12,7 @@
 */
 body{
     font-family: 'Manjari';
-    font-size:16px
+    font-size: 20px;
 }
 body.active{overflow:hidden;z-index:-1}.no-js
 
