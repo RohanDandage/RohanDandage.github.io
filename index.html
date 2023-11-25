@@ -533,27 +533,30 @@
     <hr class='sep'>
 
     <div id="projects">
-        <div id="contact" style="height:80vh">
-            <h2 class="big-text" style="margin-bottom: 50px;color:#000000">Contact<br><br></h2>
+        <div id="contact" style="display: flex;height:80vh;flex-direction: column;justify-content: center;align-items: center;flex-wrap: nowrap;">
             <div class="row">
-                <div style="text-align: center; font-size: 40px">
-                    <!-- TODO: make them visible. -->
-                    <a href="https://x.com/rohandandage" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>↗</a>
-                    <a href="https://www.linkedin.com/in/rohan-dandage-6b8607276" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>↗</a>
-                    <a href="https://github.com/rraadd88" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>↗</a>
+                <h2 class="big-text" style="margin-bottom: 50px;color:#000000">Contact<br><br></h2>
+            </div>
+            <div style="display: flex; flex-direction: column;flex-wrap: nowrap;">            
+                <div class="row">
+                    <div style="text-align: center; font-size: 40px;justify-content: center;align-content: center;">
+                        <!-- TODO: make them visible. -->
+                        <a href="https://x.com/rohandandage" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>↗</a>
+                        <a href="https://www.linkedin.com/in/rohan-dandage-6b8607276" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>↗</a>
+                        <a href="https://github.com/rraadd88" target="_blank"><i class="fa fa-github" aria-hidden="true"></i>↗</a>
+                    </div>
                 </div>
+                <a style="font-size: 40px; color:#525151"><br><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <div id="contact-form">
+                    <form method="POST" action="https://formspree.io/f/mjvqdwgr">
+                        <input type="hidden" name="_subject" value="Contact request from personal website" />
+                        <textarea name="message" placeholder="Your message" required></textarea>
+                        <input type="email" name="email" placeholder="Your email" required>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+                <!-- End #contact-form -->
             </div>
-            <br>
-            <a style="font-size: 40px; color:#525151"><br><br><i class="fa fa-envelope" aria-hidden="true"></i></a>
-            <div id="contact-form">
-                <form method="POST" action="https://formspree.io/f/mjvqdwgr">
-                    <input type="hidden" name="_subject" value="Contact request from personal website" />
-                    <textarea name="message" placeholder="Your message" required></textarea>
-                    <input type="email" name="email" placeholder="Your email" required>
-                    <button type="submit">Send</button>
-                </form>
-            </div>
-            <!-- End #contact-form -->
         </div>
         <div class="project-footer">
             <div style="display: flex;justify-content: center;height: 5vh;">
