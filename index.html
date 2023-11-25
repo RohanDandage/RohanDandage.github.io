@@ -4,9 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=1000px, initial-scale=1.0, user-scalable=no"> -->
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"> -->
-    <meta name="viewport" content="width=device-width, width=device-height, initial-scale=1">
+    <!-- small screen allowed-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <!-- small screen disallowed-->
+    <!-- <meta name="viewport" content="width=device-width, width=device-height, initial-scale=1"> -->
     <title>Rohan Dandage</title>
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
@@ -136,6 +137,19 @@
                                     </div>    
                                 </li>
                             </div>
+                            <div class="gallery-item sysbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop4.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Single-cell imaging of protein dynamics of paralogs reveals mechanisms of gene retention</div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1101/2023.11.23.568466" target=”_blank”>bioRχiv↗</a></div>
+                                        <div class="gallery-item-job-title">2023</div>
+                                    </div>    
+                                </li>
+                            </div>                            
                             <div class="gallery-item cansynbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
@@ -401,7 +415,7 @@
                                         <a href="https://github.com/RohanDandage/RohanDandage.github.io" target=”_blank”>Source↗</a>
                                         <a href="https://github.com/RyanFitzgerald/devportfolio" target=”_blank”>Forked from↗</a>
                                     </div>
-                                <div class="gallery-item-job-title">JavaScript</div>
+                                <div class="gallery-item-job-title">CSS, JavaScript</div>
                                 </div>    
                             </li>
                         </div>
@@ -417,7 +431,7 @@
                                         <a href="https://rohannart.github.io" target=”_blank”>Demo↗
                                         <a href="https://github.com/rohannart/rohannart.github.io" target=”_blank”>Source↗</a>
                                     </div>
-                                <div class="gallery-item-job-title">JavaScript</div>
+                                <div class="gallery-item-job-title">CSS, JavaScript</div>
                                 </div>    
                             </li>
                         </div>
@@ -458,10 +472,10 @@
                         <div class="filter-btn-container">
                             <!-- Filter buttons -->
                             <button class="filter-btn" onclick="filterGallery('gallery3', 'short');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Short form</a></span>
+                                <span class="mid-text"><a href="javascript:void(0);">Short-form</a></span>
                             </button>
                             <button class="filter-btn" onclick="filterGallery('gallery3', 'long');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Long form</a></span>
+                                <span class="mid-text"><a href="javascript:void(0);">Long-form</a></span>
                             </button>
                             <button class="filter-btn" onclick="filterGallery('gallery3', 'all');toggleActive(this,'all')">
                                 <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
@@ -473,12 +487,15 @@
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
                                         <img class="gallery-item-static" src="assets/decoding_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg"/>
+                                        <img class="gallery-item-animated" src="https://policyoptions.irpp.org/wp-content/uploads/sites/2/2023/11/Dismantling-systemic-ableism-in-health-research.jpg"/>
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
-                                        <div class="gallery-item-full-name">Dismantling ableism</div>
+                                        <div class="gallery-item-full-name">Dismantling systemic ableism in health research</div>
                                             <div class="gallery-item-details">
-                                                <!-- <a href="https://pypi.org/project/htsimaging" target=”_blank”>Package↗ -->
+                                                <a href="https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target=”_blank”><i class="fa fa-file-text-o" aria-hidden="true"></i>↗</a>
+                                                <a href="https://twitter.com/AbleismAcademia/status/1728095925720010918" target=”_blank”><i class="fa fa-twitter" aria-hidden="true"></i>↗</a>
+                                                <a href="https://www.linkedin.com/pulse/dismantling-systemic-ableism-health-q0ine/?trk=article-ssr-frontend-pulse_more-articles_related-content-card" target=”_blank”><i class="fa fa-linkedin" aria-hidden="true"></i>↗</a>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target=”_blank”><i class="fa fa-facebook" aria-hidden="true"></i>↗</a>
                                             </div>
                                         <div class="gallery-item-job-title">2023</div>
                                     </div>    
@@ -495,7 +512,7 @@
                                             <div class="gallery-item-details">
                                                 <!-- <a href="https://pypi.org/project/htsimaging" target=”_blank”>Package↗ -->
                                             </div>
-                                        <div class="gallery-item-job-title"></div>
+                                        <div class="gallery-item-job-title">TBA</div>
                                     </div>    
                                 </li>
                             </div>
@@ -539,7 +556,7 @@
             <!-- End #contact-form -->
         </div>
         <div class="project-footer">
-            <div style="display: flex;justify-content: flex-end;height: 5vh;">
+            <div style="display: flex;justify-content: center;height: 5vh;">
                 <p style="color:#808080;text-align: center;">
                     Copyright &copy; <span id="current-year"><script>document.write(/\d{4}/.exec(Date())[0])</script></span> Rohan Dandage
                 </p>
