@@ -43,7 +43,7 @@
   /* min-width: 600px;   */
   width: auto;
   overflow-x: auto; 
-  cursor: grab;
+  /* cursor: grab; */
   user-select: none;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */

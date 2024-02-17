@@ -61,3 +61,25 @@
   enableHorizontalScroll('gallery2');
   enableHorizontalScroll('gallery3');    
   
+  
+  function enableHorizontalScrollwheel(elementId) {
+    var container = document.getElementById(elementId);
+
+    if (container) {
+        container.addEventListener('wheel', function(event) {
+            if (event.deltaY > 0) {
+                container.scrollLeft += 70; // Adjust scrolling speed if needed
+            } else {
+                container.scrollLeft -= 150; // Adjust scrolling speed if needed
+            }
+            event.preventDefault();
+        });
+    } else {
+        console.error('Element with id ' + elementId + ' not found.');
+    }
+}
+
+// Call the function with the ID of the container element
+enableHorizontalScrollwheel('gallery1');
+enableHorizontalScrollwheel('gallery2');
+enableHorizontalScrollwheel('gallery3');
