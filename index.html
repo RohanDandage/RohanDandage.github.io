@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
@@ -87,24 +87,41 @@
                     <img class="art-image1" src="assets/research.svg.jpg" alt=""/>
                 </div>
                 <div class="gallery">
-                        <div class="filter-btn-container">
-                            <!-- Filter buttons -->
-                            <button class="filter-btn" onclick="filterGallery('gallery1', 'cansynbio');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Cancer systems biology</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery1', 'sysbio');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Systems biology</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery1', 'biophy');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Biophysics</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery1', 'all');toggleActive(this,'all')">
-                                <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                            </button>
+                        <div class="gallery-controls">
+                            <div class="filter-btn-container">
+                                <!-- Filter buttons -->
+                                <button class="filter-btn" onclick="filterGallery('gallery1', 'cansynbio');toggleActive(this)">
+                                    <span class="mid-text"><a href="javascript:void(0);">Cancer systems biology</a></span>
+                                </button>
+                                <button class="filter-btn" onclick="filterGallery('gallery1', 'sysbio');toggleActive(this)">
+                                    <span class="mid-text"><a href="javascript:void(0);">Systems biology</a></span>
+                                </button>
+                                <button class="filter-btn" onclick="filterGallery('gallery1', 'biophy');toggleActive(this)">
+                                    <span class="mid-text"><a href="javascript:void(0);">Biophysics</a></span>
+                                </button>
+                                <button class="filter-btn" onclick="filterGallery('gallery1', 'all');toggleActive(this,'all')">
+                                    <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
+                                </button>
+                            </div>
+                        <!-- </div>                        
+                        <div class="gallery-controls"> -->
+                            <!-- <div class="combo-button-group">
+                                <button aria-controls="gallery1" aria-label="Previous" class="js-carousel__button--prev" disabled="">
+                                    <span aria-hidden="true" class="icon-md-fill">
+                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
+                                    </span>
+                                </button>
+                                <button aria-controls="gallery1" aria-label="Next" class="js-carousel__button--next">
+                                    <span aria-hidden="true" class="icon-md-fill">
+                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
+                                    </span>
+                                </button>
+                            </div> -->
                         </div>
                         <!-- Gallery 1 -->
                         
                         <div class="gallery-container" id="gallery1">
+
                             <div class="gallery-item sysbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
@@ -115,6 +132,20 @@
                                         <div class="gallery-item-full-name">Need for multi-level integration</div>
                                         <div class="gallery-item-details"><a href="http://dx.doi.org/10.1016/j.cels.2016.01.010" target=”_blank”>Cell Systems↗</a></div>
                                         <div class="gallery-item-job-title">2016</div>
+                                    </div>    
+                                </li>
+                            </div>
+
+                            <div class="gallery-item cansynbio">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/research_crop6.jpg"/>
+                                        <img class="gallery-item-animated" src="assets/research/2026_01.png" alt="" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Recursive mutational robustness in cancer through intra- and inter-genic compensation</div>
+                                        <div class="gallery-item-details"><a href="https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1" target=”_blank”>bioRxiv↗</a></div>
+                                        <div class="gallery-item-job-title">2026</div>
                                     </div>    
                                 </li>
                             </div>
@@ -286,6 +317,22 @@
                     </div>
                     <!-- Gallery 1 -->
                     <div class="gallery-container" id="gallery2">
+                        
+                        <div class="gallery-item tools">
+                            <li class="gallery-item-container">
+                                <div class="gallery-item-img-wrapper">
+                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg"/>
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/E267.svg"/>
+                                </div>
+                                <div class="gallery-item-container-text-textbox">
+                                    <div class="gallery-item-full-name">intom⿻<br>Perturbational robustness estimation using integrative omics data</div>
+                                        <div class="gallery-item-details">
+                                            <a href="https://github.com/rraadd88/intom" target=”_blank”>Source↗</a>
+                                        </div>
+                                </div>
+                            </li>
+                        </div>
+
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
@@ -298,10 +345,10 @@
                                             <a href="https://pypi.org/project/beditor" target=”_blank”>Package↗</a>
                                             <a href="https://github.com/rraadd88/beditor" target=”_blank”>Source↗</a>
                                         </div>
-                                    <div class="gallery-item-job-title">Python</div>
                                 </div>    
                             </li>
                         </div>
+
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
@@ -314,7 +361,6 @@
                                             <a href="https://pypi.org/project/htsimaging" target=”_blank”>Package↗</a>
                                             <a href="https://github.com/rraadd88/htsimaging" target=”_blank”>Source↗</a>
                                         </div>
-                                    <div class="gallery-item-job-title">Python</div>
                                 </div>    
                             </li>
                         </div>                        
@@ -330,7 +376,6 @@
                                             <a href="https://pypi.org/project/chrov" target=”_blank”>Package↗</a>
                                             <a href="https://github.com/rraadd88/chrov" target=”_blank”>Source↗</a>
                                         </div>
-                                    <div class="gallery-item-job-title">Python</div>
                                 </div>    
                             </li>
                         </div>
@@ -426,7 +471,6 @@
                                         <!-- <a href="https://pypi.org/project/removestar" target=”_blank”>Package↗ -->
                                         <a href="https://github.com/alexxijielu/yeast_segmentation" target=”_blank”>Source↗</a>
                                     </div>
-                                    <div class="gallery-item-job-title">Python</div>
                                 </div>    
                             </li>
                         </div>
@@ -591,32 +635,17 @@
     <div id="projects">
         <div id="contact" style="display: flex;height:80vh;flex-direction: column;justify-content: center;align-items: center;flex-wrap: nowrap;">
             <div class="row">
-                <h2 class="big-text" style="margin-bottom: 50px;color:#000000">Contact<br><br></h2>
+                <h2 class="big-text" style="margin-bottom: 50px;color:#000000"><br><br></h2>
             </div>
             <div style="display: flex; flex-direction: column;flex-wrap: nowrap;">            
                 <div class="row">
-                    <div style="text-align: center; font-size: 40px;justify-content: center;align-content: center;">
-                        <!-- TODO: make them visible. -->
+                    <div style="text-align: center; font-size: 50px;justify-content: center;align-content: center;">
                         <a href="https://www.linkedin.com/in/rohan-dandage-6b8607276" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
+                        <a href="https://bsky.app/profile/rohandandage.bsky.social" target="_blank"><i class="fa-brands fa-bluesky" aria-hidden="true"></i>↗</a>
+                        <a href="https://substack.com/@embiosys" target="_blank"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>↗</a>
                         <a href="https://github.com/rraadd88" target="_blank"><i class="fa-brands fa-square-github" aria-hidden="true"></i>↗</a>
-                        </br>
-                        <a href="https://x.com/rohandandage" target="_blank"><i class="fa-brands fa-twitter" aria-hidden="true"></i>↗</a>
-                        <a href="https://mastodon.social/@rohandandage" target="_blank"><i class="fa-brands fa-mastodon" aria-hidden="true"></i>↗</a>
-                        <a href="https://bsky.app/profile/rohandandage.bsky.social" target="_blank">
-                            <!-- todo: <i class="fa-brands fa-bluesky" aria-hidden="true"></i> -->
-                            <i class="fa fa-at" aria-hidden="true"></i>↗</a>
                     </div>
                 </div>
-                <a style="font-size: 40px; color:#525151"><br><i class="fa fa-envelope" aria-hidden="true"></i></a>
-                <div id="contact-form">
-                    <form method="POST" action="https://formspree.io/f/mjvqdwgr">
-                        <input type="hidden" name="_subject" value="Contact request from personal website" />
-                        <textarea name="message" placeholder="Your message" required></textarea>
-                        <input type="email" name="email" placeholder="Your email" required>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-                <!-- End #contact-form -->
             </div>
         </div>
         <div class="project-footer">
