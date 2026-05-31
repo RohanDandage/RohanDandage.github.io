@@ -240,7 +240,7 @@ a:hover {
 
 .art {
   /* for centering */
-  flex: 1;  
+  flex: 0 0 35%;  
   display: flex;
   align-items: center; /*vertical*/
   justify-content: center;  
@@ -250,7 +250,7 @@ a:hover {
   /* width:40%; */
   /* for testing flex */
   /* background-color: #3498db; */
-
+  max-width: 35%;
 }
 
 .art_small {

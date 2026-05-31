@@ -30,6 +30,52 @@
   color: #FFFFFF; /* Change this color to your desired text color for the highlighted button */
 }
 
+.gallery-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  min-height: 50px; /* Consistent height across sections */
+}
+
+.combo-button-group {
+  display: flex;
+  gap: 8px;
+  margin-left: auto; /* Ensure it's pushed to the right */
+  flex-shrink: 0;
+  position: relative;
+  z-index: 100;
+}
+
+.combo-button-group button {
+  cursor: pointer;
+  width: 40px; /* Fixed circular size */
+  height: 40px;
+  padding: 0;
+  border: 1px solid #e7e7e7;
+  background-color: rgb(250, 250, 250);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s, opacity 0.3s;
+  color: #333;
+  pointer-events: auto;
+}
+
+.combo-button-group button:hover:not(:disabled) {
+  background-color: #e7e7e7;
+}
+
+.combo-button-group button:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.combo-button-group .icon-md-fill {
+  display: flex;
+}
 
 /* Style for gallery items */
 .gallery-container {
@@ -102,7 +148,7 @@ a:hover {
   /* height: 25%; */
   /* max-height:30vh; */
   /* margin: 0 0 60px; */
-  /* padding: 0; */
+  padding: 0;
 }
 
 .gallery-item-img-wrapper {

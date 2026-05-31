@@ -103,9 +103,7 @@
                                     <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
                                 </button>
                             </div>
-                        <!-- </div>                        
-                        <div class="gallery-controls"> -->
-                            <!-- <div class="combo-button-group">
+                            <div class="combo-button-group">
                                 <button aria-controls="gallery1" aria-label="Previous" class="js-carousel__button--prev" disabled="">
                                     <span aria-hidden="true" class="icon-md-fill">
                                         <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
@@ -116,7 +114,7 @@
                                         <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
                                     </span>
                                 </button>
-                            </div> -->
+                            </div>
                         </div>
                         <!-- Gallery 1 -->
                         
@@ -300,20 +298,34 @@
                 <img class="art-image1" src="assets/coding.svg.jpg" alt=""/>
             </div>
             <div class="gallery">
-                    <div class="filter-btn-container">
-                        <!-- Filter buttons -->
-                        <button class="filter-btn" onclick="filterGallery('gallery2', 'tools');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Methods</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery2', 'viz');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Visualizations</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery2', 'co');toggleActive(this)">
-                            <span class="mid-text"><a href="javascript:void(0);">Collaborations</a></span>
-                        </button>
-                        <button class="filter-btn" onclick="filterGallery('gallery2', 'all');toggleActive(this,'all')">
-                            <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                        </button>
+                    <div class="gallery-controls">
+                        <div class="filter-btn-container">
+                            <!-- Filter buttons -->
+                            <button class="filter-btn" onclick="filterGallery('gallery2', 'tools');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Methods</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery2', 'viz');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Visualizations</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery2', 'co');toggleActive(this)">
+                                <span class="mid-text"><a href="javascript:void(0);">Collaborations</a></span>
+                            </button>
+                            <button class="filter-btn" onclick="filterGallery('gallery2', 'all');toggleActive(this,'all')">
+                                <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
+                            </button>
+                        </div>
+                        <div class="combo-button-group">
+                            <button aria-controls="gallery2" aria-label="Previous" class="js-carousel__button--prev" disabled="">
+                                <span aria-hidden="true" class="icon-md-fill">
+                                    <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
+                                </span>
+                            </button>
+                            <button aria-controls="gallery2" aria-label="Next" class="js-carousel__button--next">
+                                <span aria-hidden="true" class="icon-md-fill">
+                                    <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
+                                </span>
+                            </button>
+                        </div>
                     </div>
                     <!-- Gallery 1 -->
                     <div class="gallery-container" id="gallery2">
@@ -540,17 +552,31 @@
                 </div>
                 <!-- Gallery 3 -->
                 <div class="gallery">
-                        <div class="filter-btn-container">
-                            <!-- Filter buttons -->
-                            <button class="filter-btn" onclick="filterGallery('gallery3', 'short');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Short-form</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery3', 'long');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Long-form</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery3', 'all');toggleActive(this,'all')">
-                                <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                            </button>
+                        <div class="gallery-controls">
+                            <div class="filter-btn-container">
+                                <!-- Filter buttons -->
+                                <button class="filter-btn" onclick="filterGallery('gallery3', 'short');toggleActive(this)">
+                                    <span class="mid-text"><a href="javascript:void(0);">Short-form</a></span>
+                                </button>
+                                <button class="filter-btn" onclick="filterGallery('gallery3', 'long');toggleActive(this)">
+                                    <span class="mid-text"><a href="javascript:void(0);">Long-form</a></span>
+                                </button>
+                                <button class="filter-btn" onclick="filterGallery('gallery3', 'all');toggleActive(this,'all')">
+                                    <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
+                                </button>
+                            </div>
+                            <div class="combo-button-group">
+                                <button aria-controls="gallery3" aria-label="Previous" class="js-carousel__button--prev" disabled="">
+                                    <span aria-hidden="true" class="icon-md-fill">
+                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
+                                    </span>
+                                </button>
+                                <button aria-controls="gallery3" aria-label="Next" class="js-carousel__button--next">
+                                    <span aria-hidden="true" class="icon-md-fill">
+                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
+                                    </span>
+                                </button>
+                            </div>
                         </div>
                         <!-- Gallery items -->
                         <div class="gallery-container" id="gallery3">
