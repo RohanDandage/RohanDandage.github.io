@@ -1,17 +1,6 @@
 .filter-btn-container {
-  text-align: left; /* Align buttons to the left */
-  /* color: #000000; */
+  text-align: left;
 }
-
-/* Style for filter buttons */
-/* .filter-btn {
-  cursor: pointer;
-  padding: 5px;
-  margin: 10px;
-  border: 0px solid #FFFFFF;
-  background-color: #FFFFFF;
-  display: inline-block;
-} */
 
 .filter-btn {
   cursor: pointer;
@@ -20,14 +9,13 @@
   border: 0px solid #FFFFFF;
   background-color: rgb(250, 250, 250);
   display: inline-block;
-  transition: background-color 0.3s; /* Add transition for smooth effect */
+  transition: background-color 0.3s;
   text-align: left;
 }
 
-/* Highlight the pressed button */
 .filter-btn.active {
-  background-color: #e7e7e7; /* Change this color to your desired highlight color */
-  color: #FFFFFF; /* Change this color to your desired text color for the highlighted button */
+  background-color: #e7e7e7;
+  color: #FFFFFF;
 }
 
 .gallery-controls {
@@ -36,13 +24,13 @@
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 10px;
-  min-height: 50px; /* Consistent height across sections */
+  min-height: 50px;
 }
 
 .combo-button-group {
   display: flex;
   gap: 8px;
-  margin-left: auto; /* Ensure it's pushed to the right */
+  margin-left: auto;
   flex-shrink: 0;
   position: relative;
   z-index: 100;
@@ -50,7 +38,7 @@
 
 .combo-button-group button {
   cursor: pointer;
-  width: 40px; /* Fixed circular size */
+  width: 40px;
   height: 40px;
   padding: 0;
   border: 1px solid #e7e7e7;
@@ -77,25 +65,19 @@
   display: flex;
 }
 
-/* Style for gallery items */
 .gallery-container {
   display: flex;
-  flex-wrap: nowrap; /* No wrap to keep items in a single row */
+  flex-wrap: nowrap;
   gap: 0px;
-  /* Enable horizontal scrollbar */
   height: 100%;
   min-height: 350px;  
   max-height: 400px;  
-  /* min-width: 600px;   */
   width: auto;
   overflow-x: auto; 
-  /* cursor: grab; */
   user-select: none;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  scrollbar-width: none;
 }
 
-/* Scrollbar Styling */
 ::-webkit-scrollbar {
   height: 3px;
   width: 3px;
@@ -103,37 +85,25 @@
 
 ::-webkit-scrollbar-track {
   background-color: #FFFFFF;
-  -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  -webkit-border-radius: 10px;
   border-radius: 10px;
   background: #e0e0e0; 
 }
-/* end of Scrollbar Styling */
 
 .gallery-item {
   flex: 0 0 47.5%; 
-  /* Fixed width for gallery item */
-  /* height: 50%; */
-  /* width: 50%; */
   overflow: hidden;
-  /* border-radius: 5px; */
-  /* cursor: pointer; */
   transition: background-color 0.3s ease;
   position: relative;    
-  padding: 30px 30px; /*around the image*/
+  padding: 30px 30px;
 }
-
-/* filtering  */
 
 .gallery-item.hide {
   display: none;
 }
-
-/* taken from vue */
 
 a:hover {
   color: #0000CD;
@@ -141,25 +111,15 @@ a:hover {
 
 .gallery-item-container {
   display: block;
-  -webkit-box-align: center;
-          align-items: center;
-  /* width: 50%; */
-  /* width:30vh; */
-  /* height: 25%; */
-  /* max-height:30vh; */
-  /* margin: 0 0 60px; */
+  align-items: center;
   padding: 0;
 }
 
 .gallery-item-img-wrapper {
   position: relative;
-  -webkit-transition: -webkit-transform 0.15s ease;
-  transition: -webkit-transform 0.15s ease;
   transition: transform 0.15s ease;
-  transition: transform 0.15s ease, -webkit-transform 0.15s ease;
   height: 100%;
   width: 100%;
-  /* padding-top: 2px; */
   padding-bottom: 100%;
 }
 
@@ -183,9 +143,7 @@ a:hover {
   height: calc(80% - 40px);
   width: calc(80% - 40px);
   opacity: 0;
-  -webkit-transition: opacity 0.15s ease;
   transition: opacity 0.15s ease;
-  /* box-shadow: 0 2px 64px 10px rgba(0, 0, 0, 0.70); */
 }
 
 .gallery-item-static {
@@ -197,7 +155,6 @@ a:hover {
   height: 100%;
   object-fit: cover;
   filter: grayscale(100%);
-  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
@@ -209,22 +166,6 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-
-/* TODOs: clip larger image e.g. art image
-DEBUG: need to use size of the image after the clipping, instead of before the clipping.
-.clip1 {
-  clip-path: polygon(0 75%, 25% 75%, 25% 100%, 0 100%);
-  right: 0;
-} */
-
-.gallery-item-container-text-wrapper {
-  position: relative;
-  color: black;
-  line-height: 1; /* Tune line "margin" here */
-  letter-spacing: 0.05em;
-  font-weight: 500;
-  margin: 5px 0 0;
 }
 
 .gallery-item-full-name {
@@ -253,7 +194,7 @@ DEBUG: need to use size of the image after the clipping, instead of before the c
 }
 
 .gallery-item-container-text-textbox:hover .gallery-item-details{
-display : block;
+  display : block;
 }
 
 .gallery-item-container:hover .gallery-item-static {
@@ -261,10 +202,8 @@ display : block;
 }
 
 .gallery-item-container:hover .gallery-item-img-wrapper {
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-  -webkit-transform: scale(1.06);
-          transform: scale(1.06);
+  transform-origin: 50% 50%;
+  transform: scale(1.06);
 }
 
 .gallery-item-container:hover .gallery-item-img-wrapper:after {
@@ -273,12 +212,6 @@ display : block;
 
 @media(min-width: 700px) {
   .gallery-item-img-wrapper:after {
-    box-shadow: 0px 0px 10px 50px rgba(121, 121, 121, 0.7); /*around the image*/
+    box-shadow: 0px 0px 10px 50px rgba(121, 121, 121, 0.7);
   }
 }
-
-/* @media (min-width: 768px) {
-  .gallery-item-container-text {
-    font-size: 30px;
-  }
-} */
