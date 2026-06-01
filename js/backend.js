@@ -1,3 +1,46 @@
+/* --- Intro Animation (formerly intro.js) --- */
+(function() {
+    $(window).on('load', function() {
+      var background, intro, loader, logo, tl;
+      intro = $('.intro');
+      loader = $('.load');
+      background = $('.background');
+      logo = $('.logo > img');
+      tl = new TimelineMax();
+      return tl.fromTo(logo, 0, {
+        scale: .95,
+        alpha: 0
+      }, {
+        ease: Expo.easeOut,
+        scale: 1,
+        alpha: 1,
+        delay: 0
+      }).to(loader, 0.3, {
+        ease: Power4.easeInOut,
+        x: "0%",
+        onComplete: function() {
+          return TweenMax.set(logo, {
+            visibility: "hidden",
+            delay: 0
+          });
+        }
+      }).to(loader, 0, {
+        ease: Power4.easeInOut,
+        x: "100%"
+      }).to(background, 0, {
+        ease: Power4.easeInOut,
+        x: "100%",
+        onComplete: function() {
+          return TweenMax.set(intro, {
+            visibility: "hidden"
+          });
+        }
+      });
+    });
+  
+  }).call(this);
+
+/* --- Gallery Functionality (formerly gallery_basic.js) --- */
 document.addEventListener('DOMContentLoaded', function () {
   // Initialize galleries
   filterGallery('gallery1', 'all');
@@ -144,3 +187,22 @@ function initializeCarouselControls() {
     setTimeout(() => updateButtonStates(gallery), 100);
   });
 }
+
+/* --- Keyboard Navigation (formerly navigation.js) --- */
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'ArrowDown') {
+    const nextButtons = document.querySelectorAll('.next_button');
+    for (let btn of nextButtons) {
+      const container = btn.closest('#projects');
+      if (container) {
+        const containerRect = container.getBoundingClientRect();
+        // If the section is currently in view (at the top or overlapping the top)
+        if (containerRect.top <= 10 && containerRect.bottom > 10) {
+          btn.click();
+          e.preventDefault();
+          break;
+        }
+      }
+    }
+  }
+});
