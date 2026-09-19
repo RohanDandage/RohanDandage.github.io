@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://rohandandage.github.io/</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+
+    <!-- Site Identity & Branding -->
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/splash.gif</image:loc>
+      <image:title>Rohan Dandage Logo Animation</image:title>
+      <image:caption>Intro animation for the academic and research portfolio of Rohan Dandage</image:caption>
+    </image:image>
+
+    <!-- Research Section Art & Figures -->
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research.svg.jpg</image:loc>
+      <image:title>Research Section - Biological and Molecular Networks</image:title>
+      <image:caption>Conceptual illustration of computational systems biology, biological networks, and cancer genomics research</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2026_01.png</image:loc>
+      <image:title>Recursive Mutational Robustness in Cancer Diagram</image:title>
+      <image:caption>Diagram of intra- and inter-genic compensation mechanisms in cancer from bioRxiv publication</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2016_01.png</image:loc>
+      <image:title>Need for Multi-Level Integration in Systems Biology</image:title>
+      <image:caption>Multi-level biological systems integration diagram published in Cell Systems</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2018_02.png</image:loc>
+      <image:title>beditor: Guide RNA Library Design for CRISPR Base Editing</image:title>
+      <image:caption>Computational workflow diagram for designing guide RNA libraries for CRISPR base editing published in Genetics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2018_01.png</image:loc>
+      <image:title>Molecular Determinants Guiding Mutational Fates</image:title>
+      <image:caption>Molecular determinants guiding environment-specific mutational fates published in PLoS Genetics</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2016_02.png</image:loc>
+      <image:title>dms2dfe: Deep Mutational Scanning Analysis Workflow</image:title>
+      <image:caption>Comprehensive workflow for the analysis of deep mutational scanning data published in Journal of Open Source Software</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research/2015_01.png</image:loc>
+      <image:title>Classification of Chemical Chaperones on Protein Folding Landscapes</image:title>
+      <image:caption>Effect of chemical chaperones on protein folding landscapes published in ACS Chemical Biology</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop4.jpg</image:loc>
+      <image:title>Chromosome Arm Aneuploidies &amp; Single-Cell Protein Dynamics</image:title>
+      <image:caption>Figures illustrating chromosome arm aneuploidies as vulnerabilities in breast cancer and single-cell protein dynamics of paralogs</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop5.jpg</image:loc>
+      <image:title>Genome Evolution Features &amp; Paralog Dependency</image:title>
+      <image:caption>Identifying features of genome evolution to exploit cancer vulnerabilities and paralog dependency in human cells</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop3.jpg</image:loc>
+      <image:title>Chimeric Complexes in Interspecies Yeast Hybrid</image:title>
+      <image:caption>Assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop1.jpg</image:loc>
+      <image:title>Biophysics and Protein Folding Landscapes Preview</image:title>
+      <image:caption>Research preview on chemical chaperones, protein folding landscapes, and thermodynamic stability</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop2.jpg</image:loc>
+      <image:title>Mutational Scanning and CRISPR Guide RNA Design Preview</image:title>
+      <image:caption>Research preview on deep mutational scanning analysis and CRISPR base editing workflows</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/research_crop6.jpg</image:loc>
+      <image:title>Cancer Systems Biology Publications Preview</image:title>
+      <image:caption>Research preview for mutational robustness in cancer and multi-level systems biology integration</image:caption>
+    </image:image>
+
+    <!-- Coding Section Art & Software Previews -->
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding.svg.jpg</image:loc>
+      <image:title>Coding Section - Computational Biology Tools</image:title>
+      <image:caption>Conceptual illustration representing bioinformatics tools, data analysis pipelines, and open-source packages</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding/website.png</image:loc>
+      <image:title>Rohan Dandage Academic Portfolio Website</image:title>
+      <image:caption>Interactive academic portfolio web application demonstrating research, software packages, and essays</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding/image_gallery.png</image:loc>
+      <image:title>Interactive Carousel and Filter Gallery</image:title>
+      <image:caption>Responsive multi-row carousel gallery component for research projects and software tools</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding_crop6.jpg</image:loc>
+      <image:title>intom, htsimaging &amp; yeast_segmentation Software Previews</image:title>
+      <image:caption>Previews for integrative omics analysis (intom), high-throughput imaging (htsimaging), and deep learning yeast segmentation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding_crop3.jpg</image:loc>
+      <image:title>interpretable, dseq &amp; roux Software Previews</image:title>
+      <image:caption>Previews for graph interpretability, deep sequencing analysis, and Python convenience utilities</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding_crop4.jpg</image:loc>
+      <image:title>safepy: Spatial Analysis of Functional Enrichment</image:title>
+      <image:caption>Preview and diagram for safepy Python package for spatial functional enrichment analysis</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding_crop5.jpg</image:loc>
+      <image:title>removestar: Python Explicit Imports Refactoring Tool</image:title>
+      <image:caption>Preview and demonstration for removestar Python code refactoring utility</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/coding_crop1.jpg</image:loc>
+      <image:title>chrov &amp; parag Data Visualization Packages</image:title>
+      <image:caption>Previews for chromosome visualizations (chrov) and interactive higher-order graph visualization (parag)</image:caption>
+    </image:image>
+
+    <!-- Writing Section Art & Essay Previews -->
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/decoding.svg.jpg</image:loc>
+      <image:title>Writing Section - Essays, Science Communication, and Policy Analysis</image:title>
+      <image:caption>Conceptual illustration representing science communication, policy essays, and disability advocacy</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/decoding_crop4.jpg</image:loc>
+      <image:title>Essays on Ableism, Health Research, and Biological Systems</image:title>
+      <image:caption>Previews for essays including Dismantling systemic ableism in health research, Ableism survivorship, and Public participation in research</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://rohandandage.github.io/assets/decoding_crop1.jpg</image:loc>
+      <image:title>Science Policy &amp; Scientific Communication Previews</image:title>
+      <image:caption>Preview illustrations for essays on research culture, open science, and systemic reform</image:caption>
+    </image:image>
+  </url>
+</urlset>

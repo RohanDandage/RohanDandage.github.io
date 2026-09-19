@@ -1,0 +1,612 @@
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
+
+@theme {
+  /* Typography Tokens */
+  --font-manjari: 'Manjari', sans-serif;
+
+  /* 4 Semantic Font Levers (rem-based, zero pixel dependency) */
+  --text-display: 2.25rem;
+  --text-display--line-height: 1.2;
+  --text-nav: 1.35rem;
+  --text-nav--line-height: 1.4;
+  --text-body: 1rem;
+  --text-body--line-height: 1.5;
+  --text-caption: 0.875rem;
+  --text-caption--line-height: 1.4;
+
+  /* Color Palette Tokens */
+  --color-brand-navy: #000080;
+  --color-brand-blue: #0000cd;
+  --color-brand-sep: #ececec;
+  --color-brand-muted: #808080;
+  --color-brand-card: #fafafa;
+  --color-brand-next: #d3d3d3;
+
+  /* Responsive Breakpoint Tokens */
+  --breakpoint-gallery: 1200px;
+}
+
+/* ==========================================================================
+   Base Layer: Universal Manjari Font, Zero-Scrollbar & Smooth Scroll Defaults
+   ========================================================================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-manjari);
+    /* Single master fluid root scaling lever */
+    font-size: clamp(100%, 0.85rem + 0.35vw, 115%);
+  }
+
+  body {
+    font-size: var(--text-body);
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  /* Form controls font inheritance (inputs & buttons do not inherit font-family by default) */
+  button,
+  input,
+  optgroup,
+  select,
+  textarea {
+    font-family: inherit;
+  }
+
+  /* Universal Zero-Scrollbar: suppress visible scrollbars across all rendering engines while maintaining full scroll functionality */
+  *,
+  *::before,
+  *::after {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  *::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+  }
+}
+
+/* ==========================================================================
+   Utility Layer: Design Token Typography, Borders & Clean Visuals
+   ========================================================================== */
+@utility text-lead-title {
+  font-weight: 700;
+  font-size: var(--text-display);
+  line-height: 1.2;
+}
+
+@utility text-lead-link {
+  font-size: var(--text-nav);
+  line-height: 2;
+}
+
+@utility text-section-title {
+  font-weight: 400;
+  font-size: var(--text-display);
+  line-height: 1.2;
+}
+
+@utility border-brand-lead {
+  border-left: clamp(10px, 1.6vw, 16px) solid var(--color-brand-navy);
+  margin-left: clamp(6px, 1.5vw, 18px);
+  padding-left: clamp(16px, 3vw, 32px);
+  padding-bottom: 0 !important;
+}
+
+.border-left {
+  @apply border-brand-lead;
+}
+
+/* ==========================================================================
+   Components Layer: Single Source of Truth for Portfolio UI
+   ========================================================================== */
+@layer components {
+  /* --- Intro Splash Animation (Zero-Dependency Modernized Contract) --- */
+  .intro {
+    display: flex;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    width: 100vw;
+    height: 100dvh;
+    overflow: hidden;
+    pointer-events: auto;
+    transition: opacity 0.35s ease-out, visibility 0.35s ease-out;
+  }
+
+  .intro.intro--dismissed {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .intro .background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    @apply bg-white;
+    will-change: transform;
+  }
+
+  .intro .logo {
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    will-change: opacity, transform;
+  }
+
+  .intro .logo img {
+    opacity: 0;
+    display: block;
+    max-width: 300px;
+    height: auto;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .intro {
+      display: none !important;
+    }
+  }
+
+  /* --- Section Layout & Wrapper Structure --- */
+  .sep {
+    border: 1px solid var(--color-brand-sep, #ececec);
+    width: 100%;
+    margin: 0;
+  }
+
+  #projects {
+    min-height: 100dvh;
+    width: 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  @media screen and (min-width: 1201px) {
+    #projects {
+      height: 100dvh;
+    }
+  }
+
+  #lead {
+    position: relative;
+    flex: 1 1 auto;
+    min-height: clamp(380px, 75dvh, 650px);
+  }
+
+  .lead-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: left;
+    width: fit-content;
+    max-width: calc(100% - clamp(2rem, 8vw, 5rem));
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links {
+    margin-top: clamp(12px, 2vh, 20px);
+    line-height: clamp(1.6em, 2.5vw, 2em);
+  }
+
+  #research {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    min-height: 0;
+    width: 100%;
+  }
+
+  .art_and_gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex: 1 1 auto;
+    min-height: clamp(340px, 58vh, 600px);
+    padding-left: 3%;
+    padding-right: 3%;
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .project-header {
+    display: flex;
+    min-height: clamp(65px, 16vh, 120px);
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+  }
+
+  .project-title {
+    font-weight: normal;
+    font-size: var(--text-display);
+    margin: 0;
+    text-align: center;
+  }
+
+  .art {
+    flex: 0 0 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @apply text-white;
+    max-width: 35%;
+  }
+
+  .art_small {
+    flex: 1;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 30px;
+  }
+
+  .art-image1 {
+    width: 50%;
+    min-width: 250px;
+    height: auto;
+  }
+
+  .gallery {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow-x: auto;
+  }
+
+  .project-footer {
+    display: flex;
+    min-height: clamp(75px, 16vh, 120px);
+    width: 100%;
+    max-width: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+  }
+
+  /* Responsive layout adjustments for Art & Gallery sections */
+  @media screen and (max-width: 1200px) {
+    .project-header {
+      justify-content: flex-start;
+      padding-left: clamp(1rem, 3.5vw, 2.5rem);
+      padding-right: clamp(1rem, 3.5vw, 2.5rem);
+      gap: clamp(0.75rem, 2vw, 1.5rem);
+      box-sizing: border-box;
+    }
+    .project-header > div:last-child {
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+    .project-title {
+      position: static;
+      left: auto;
+      text-align: left;
+    }
+    .art {
+      display: none;
+    }
+    .art_small {
+      display: flex;
+      flex: 0 0 auto;
+      position: static;
+      left: auto;
+      width: auto;
+    }
+    .art_small .art-image1 {
+      width: clamp(50px, 10vw, 95px);
+      min-width: 0;
+      max-width: none;
+      height: auto;
+      object-fit: contain;
+    }
+    .art_and_gallery {
+      min-height: 0;
+      height: auto;
+      padding-top: 0.5rem;
+      padding-bottom: 1rem;
+    }
+    .gallery {
+      position: static;
+      left: auto;
+      width: 100%;
+    }
+    .sep {
+      border: 0;
+    }
+  }
+
+  /* --- Gallery Controls & Filtering --- */
+  .gallery-controls {
+    @apply flex items-center flex-wrap mb-2.5 min-h-11;
+  }
+
+  .filter-btn-container {
+    @apply flex flex-wrap items-center gap-2;
+  }
+
+  /* --- Gallery Scroll Container & Item Cards --- */
+  .gallery-container {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
+    height: 100%;
+    min-height: clamp(280px, 45vh, 380px);
+    max-height: clamp(340px, 55vh, 420px);
+    width: auto;
+    overflow-x: auto;
+    user-select: none;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    touch-action: pan-y pinch-zoom;
+    cursor: grab;
+  }
+
+  .gallery-container.is-dragging {
+    cursor: grabbing;
+    scroll-snap-type: none;
+    scroll-behavior: auto;
+  }
+
+  .gallery-container.is-dragging * {
+    user-select: none;
+  }
+
+  .gallery-item,
+  .portfolio-gallery-card {
+    position: relative;
+    flex: 0 0 clamp(260px, 78vw, 360px);
+    max-width: 85vw;
+    padding: clamp(10px, 2.5vw, 24px);
+    scroll-snap-align: start;
+    scroll-snap-stop: normal;
+    @apply transition-colors duration-200;
+  }
+
+  @media (min-width: 640px) {
+    .gallery-item {
+      flex: 0 0 clamp(280px, 45vw, 380px);
+      max-width: 380px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .gallery-item {
+      flex: 0 0 clamp(300px, 32vw, 400px);
+      max-width: 400px;
+      padding: clamp(16px, 2vw, 28px);
+    }
+  }
+
+  /* JavaScript DOM Contract Safeguards */
+  .gallery-item.hide {
+    display: none !important;
+  }
+
+  .gallery-item-container {
+    position: relative;
+    display: block;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+    isolation: isolate;
+    @apply rounded-2xl shadow-xs transition-shadow duration-300;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+  }
+
+  .gallery-item-container:hover {
+    @apply shadow-md;
+  }
+
+  .gallery-item-img-wrapper {
+    position: relative;
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    height: 100%;
+    width: 100%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    @apply rounded-2xl;
+  }
+
+  .gallery-item-img-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg, #fdfdfd, #f7f7f7);
+    @apply rounded-2xl;
+  }
+
+  .gallery-item-static,
+  .gallery-item-animated {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    @apply rounded-2xl;
+  }
+
+  .gallery-item-static {
+    z-index: 2;
+    filter: invert(5%);
+    transition: opacity 0.3s ease;
+  }
+
+  .gallery-item-animated {
+    z-index: 1;
+    border: none;
+    outline: none;
+    box-shadow: none;
+  }
+
+  .gallery-item-container-text-textbox {
+    position: absolute;
+    bottom: clamp(6px, 1.5vw, 10px);
+    left: clamp(8px, 1.5vw, 12px);
+    right: clamp(8px, 1.5vw, 12px);
+    z-index: 2;
+    text-align: center;
+    @apply rounded-[10px] overflow-hidden backdrop-blur-md shadow-xs;
+    background-color: rgba(255, 255, 255, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.85);
+    transition: all 0.2s ease;
+  }
+
+  .gallery-item-full-name,
+  .gallery-item-job-title {
+    background-color: transparent;
+  }
+
+  .gallery-item-full-name {
+    color: #111827;
+    padding: 6px 10px 3px 10px;
+    font-size: var(--text-body);
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  .gallery-item-job-title {
+    color: #6b7280;
+    padding: 2px 10px 6px 10px;
+    font-size: var(--text-caption);
+    font-weight: 500;
+  }
+
+  .gallery-item-details {
+    background-color: rgba(243, 244, 246, 0.9);
+    color: #111827;
+    display: none;
+    padding: 4px 6px;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  }
+
+  .gallery-item-details a {
+    @apply inline-flex items-center gap-1 rounded-md px-2.5 py-1 font-medium text-brand-navy bg-white hover:bg-brand-navy hover:text-white transition-colors duration-150 no-underline shadow-2xs;
+    font-size: var(--text-caption);
+    border: 1px solid rgba(0, 0, 128, 0.12);
+  }
+
+  .gallery-item-container-text-textbox:hover .gallery-item-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .gallery-item-container:hover .gallery-item-static {
+    opacity: 0;
+  }
+
+  .gallery-item-container:hover .gallery-item-img-wrapper {
+    transform-origin: 50% 50%;
+    transform: scale(1.05);
+  }
+
+  /* --- Reusable Micro-Components: Circular & Pill Controls --- */
+  .portfolio-filter-btn,
+  .filter-btn {
+    @apply inline-flex items-center justify-center rounded-full bg-neutral-100 transition-all duration-200 cursor-pointer select-none px-4 py-1.5 text-zinc-800 font-normal hover:bg-neutral-200 focus:outline-none;
+    font-size: var(--text-body);
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio-filter-btn.active,
+  .filter-btn.active {
+    @apply bg-neutral-300 text-zinc-900 font-medium;
+  }
+
+  .portfolio-filter-btn a,
+  .filter-btn a {
+    @apply text-inherit no-underline;
+  }
+
+  /* --- Lightweight Row Fallback replacing Bootstrap 3 grid --- */
+  .row {
+    @apply block w-full;
+  }
+
+  /* --- Reusable Micro-Components: Interactive Brand Links --- */
+  .portfolio-lead-link,
+  .portfolio-next-btn,
+  .portfolio-external-link,
+  .portfolio-social-link {
+    @apply transition-colors duration-300 hover:text-brand-blue;
+  }
+
+  .portfolio-lead-link {
+    @apply text-left text-black no-underline inline-block;
+  }
+
+  .portfolio-next-btn,
+  .next_button {
+    @apply inline-flex items-center justify-center text-brand-next select-none cursor-pointer no-underline;
+    font-size: var(--text-nav);
+    text-decoration: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+  .portfolio-next-btn:hover,
+  .next_button:hover {
+    text-decoration: none !important;
+  }
+
+  .portfolio-external-link {
+    @apply inline-flex items-center gap-1.5 text-zinc-900 font-medium no-underline;
+    font-size: var(--text-nav);
+  }
+
+  .portfolio-social-link {
+    @apply inline-flex items-center justify-center text-brand-navy leading-none no-underline;
+  }
+}
+
+/* File sources to scan for Tailwind utility classes */
+@source "../index.html";
+@source "../js/**/*.js";

@@ -9,60 +9,610 @@
     <!-- small screen disallowed-->
     <!-- <meta name="viewport" content="width=device-width, width=device-height, initial-scale=1"> -->
     <title>Rohan Dandage</title>
+    <meta name="description" content="Personal academic and research portfolio of Rohan Dandage showcasing publications, computational biology research, and software projects.">
+    <link rel="canonical" href="https://rohandandage.github.io/">
+    
+    <!-- OpenGraph Social Cards -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://rohandandage.github.io/">
+    <meta property="og:title" content="Rohan Dandage">
+    <meta property="og:description" content="Personal academic and research portfolio of Rohan Dandage showcasing publications, computational biology research, and software projects.">
+    <meta property="og:image" content="https://rohandandage.github.io/assets/research.svg.jpg">
+    <meta property="og:image:alt" content="Rohan Dandage - Systems Biologist Portfolio">
+    <meta property="og:site_name" content="Rohan Dandage">
+
+    <!-- Twitter / X Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rohan Dandage">
+    <meta name="twitter:description" content="Personal academic and research portfolio of Rohan Dandage showcasing publications, computational biology research, and software projects.">
+    <meta name="twitter:image" content="https://rohandandage.github.io/assets/research.svg.jpg">
+    <meta name="twitter:image:alt" content="Rohan Dandage - Systems Biologist Portfolio">
+
 	<link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/tailwind.css" rel="stylesheet">
 
+    <!-- Google Scholar / Highwire Press Academic Citation Metadata (Flagship Publication) -->
+    <meta name="citation_title" content="Recursive mutational robustness in cancer through intra- and inter-genic compensation">
+    <meta name="citation_author" content="Dandage, Rohan">
+    <meta name="citation_author_orcid" content="https://orcid.org/0000-0002-6421-2067">
+    <meta name="citation_author_institution" content="Coresia Research Organisation">
+    <meta name="citation_publication_date" content="2026/05/26">
+    <meta name="citation_date" content="2026/05/26">
+    <meta name="citation_journal_title" content="bioRxiv">
+    <meta name="citation_doi" content="10.64898/2026.05.26.727768">
+    <meta name="citation_fulltext_html_url" content="https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1">
+    <meta name="citation_pdf_url" content="https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1.full.pdf">
+
+    <!-- Structured Data (JSON-LD) - Academic Knowledge Graph, Scholarly Articles & Computational Tools -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Person",
+          "@id": "https://rohandandage.github.io/#person",
+          "name": "Rohan Dandage",
+          "alternateName": [
+            "Rohan A. Dandage",
+            "R. Dandage"
+          ],
+          "jobTitle": [
+            "Director",
+            "Systems Biologist"
+          ],
+          "description": "Systems biologist specializing in cancer systems biology, biophysics, and computational biology. Director at Coresia Research Organisation.",
+          "worksFor": {
+            "@type": "ResearchOrganization",
+            "name": "Coresia Research Organisation"
+          },
+          "affiliation": {
+            "@type": "ResearchOrganization",
+            "name": "Coresia Research Organisation"
+          },
+          "alumniOf": {
+            "@type": "EducationalOrganization",
+            "name": "Human Genetics department, McGill university, Montreal",
+            "sameAs": "https://www.mcgill.ca/humangenetics/"
+          },
+          "identifier": [
+            {
+              "@type": "PropertyValue",
+              "propertyID": "ORCID",
+              "value": "0000-0002-6421-2067"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "Scopus Author ID",
+              "value": "56572974300"
+            },
+            {
+              "@type": "PropertyValue",
+              "propertyID": "Web of Science ResearcherID",
+              "value": "JED-7457-2023"
+            }
+          ],
+          "url": "https://rohandandage.github.io/",
+          "sameAs": [
+            "https://orcid.org/0000-0002-6421-2067",
+            "https://scholar.google.ca/citations?hl=en&user=ZCg1Lq8AAAAJ&view_op=list_works&sortby=pubdate",
+            "https://www.semanticscholar.org/author/Rohan-Dandage/2387233008",
+            "https://www.researchgate.net/scientific-contributions/Rohan-Dandage-2060337992",
+            "https://www.scopus.com/authid/detail.uri?authorId=56572974300",
+            "https://www.webofscience.com/wos/author/record/JED-7457-2023",
+            "https://github.com/rraadd88",
+            "https://www.linkedin.com/in/rohan-dandage-6b8607276",
+            "https://bsky.app/profile/rohandandage.bsky.social",
+            "https://substack.com/@embiosys"
+          ],
+          "knowsAbout": [
+            "Systems Biology",
+            "Cancer Systems Biology",
+            "Biophysics",
+            "Computational Biology",
+            "Bioinformatics",
+            "Deep Mutational Scanning",
+            "CRISPR Base Editing"
+          ],
+          "mainEntityOfPage": "https://rohandandage.github.io/"
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.64898/2026.05.26.727768",
+          "headline": "Recursive mutational robustness in cancer through intra- and inter-genic compensation",
+          "name": "Recursive mutational robustness in cancer through intra- and inter-genic compensation",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2026-05-26",
+          "sameAs": "https://doi.org/10.64898/2026.05.26.727768",
+          "url": "https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1",
+          "publisher": {
+            "@type": "Organization",
+            "name": "bioRxiv"
+          },
+          "about": [
+            "Cancer Systems Biology",
+            "Mutational Robustness",
+            "Genetic Compensation"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1016/j.cels.2016.01.010",
+          "headline": "Need for multi-level integration",
+          "name": "Need for multi-level integration",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2016",
+          "sameAs": "https://doi.org/10.1016/j.cels.2016.01.010",
+          "url": "https://doi.org/10.1016/j.cels.2016.01.010",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Cell Systems"
+          },
+          "about": [
+            "Systems Biology",
+            "Multi-level Integration"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1158/1538-7445.AM2023-1413",
+          "headline": "Chromosome arm aneuploidies as genetic vulnerabilities of triple-negative breast cancer",
+          "name": "Chromosome arm aneuploidies as genetic vulnerabilities of triple-negative breast cancer",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2023",
+          "sameAs": "https://doi.org/10.1158/1538-7445.AM2023-1413",
+          "url": "https://doi.org/10.1158/1538-7445.AM2023-1413",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Cancer Research"
+          },
+          "about": [
+            "Cancer Research",
+            "Aneuploidy",
+            "Triple-Negative Breast Cancer"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1101/2023.11.23.568466",
+          "headline": "Single-cell imaging of protein dynamics of paralogs reveals mechanisms of gene retention",
+          "name": "Single-cell imaging of protein dynamics of paralogs reveals mechanisms of gene retention",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2023",
+          "sameAs": "https://doi.org/10.1101/2023.11.23.568466",
+          "url": "https://doi.org/10.1101/2023.11.23.568466",
+          "publisher": {
+            "@type": "Organization",
+            "name": "bioRxiv"
+          },
+          "about": [
+            "Single-Cell Imaging",
+            "Protein Dynamics",
+            "Paralogs",
+            "Gene Retention"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1016/j.cels.2021.08.007",
+          "headline": "Identifying features of genome evolution to exploit cancer vulnerabilities",
+          "name": "Identifying features of genome evolution to exploit cancer vulnerabilities",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2021",
+          "sameAs": "https://doi.org/10.1016/j.cels.2021.08.007",
+          "url": "https://doi.org/10.1016/j.cels.2021.08.007",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Cell Systems"
+          },
+          "about": [
+            "Genome Evolution",
+            "Cancer Vulnerabilities",
+            "Synthetic Lethality"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1093/molbev/msaa298",
+          "headline": "Frequent assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid",
+          "name": "Frequent assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2020",
+          "sameAs": "https://doi.org/10.1093/molbev/msaa298",
+          "url": "https://doi.org/10.1093/molbev/msaa298",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Molecular Biology and Evolution"
+          },
+          "about": [
+            "Protein Interaction Network",
+            "Chimeric Complexes",
+            "Yeast Hybrid"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.15252/msb.20198871",
+          "headline": "Paralog dependency indirectly affects the robustness of human cells",
+          "name": "Paralog dependency indirectly affects the robustness of human cells",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2019",
+          "sameAs": "https://doi.org/10.15252/msb.20198871",
+          "url": "https://doi.org/10.15252/msb.20198871",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Molecular Systems Biology"
+          },
+          "about": [
+            "Paralog Dependency",
+            "Cellular Robustness",
+            "Human Genetics"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1534/genetics.119.302089",
+          "headline": "beditor: A computational workflow for designing libraries of guide RNAs for CRISPR base editing",
+          "name": "beditor: A computational workflow for designing libraries of guide RNAs for CRISPR base editing",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2019",
+          "sameAs": "https://doi.org/10.1534/genetics.119.302089",
+          "url": "https://doi.org/10.1534/genetics.119.302089",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Genetics"
+          },
+          "about": [
+            "CRISPR Base Editing",
+            "Guide RNA Design",
+            "Computational Genomics"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1371/journal.pgen.1007419",
+          "headline": "Differential strengths of molecular determinants guide environment specific mutational fates",
+          "name": "Differential strengths of molecular determinants guide environment specific mutational fates",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2018",
+          "sameAs": "https://doi.org/10.1371/journal.pgen.1007419",
+          "url": "https://doi.org/10.1371/journal.pgen.1007419",
+          "publisher": {
+            "@type": "Organization",
+            "name": "PLoS Genetics"
+          },
+          "about": [
+            "Molecular Determinants",
+            "Mutational Fates",
+            "Biophysics"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.21105/joss.00362",
+          "headline": "dms2dfe : Comprehensive workflow for the analysis of deep mutational scanning data",
+          "name": "dms2dfe : Comprehensive workflow for the analysis of deep mutational scanning data",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2017",
+          "sameAs": "https://doi.org/10.21105/joss.00362",
+          "url": "https://doi.org/10.21105/joss.00362",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Journal of Open Source Software"
+          },
+          "about": [
+            "Deep Mutational Scanning",
+            "Bioinformatics",
+            "Analysis Workflow"
+          ]
+        },
+        {
+          "@type": "ScholarlyArticle",
+          "@id": "https://doi.org/10.1021/cb500798y",
+          "headline": "Classification of chemical chaperones based on their effect on protein folding landscapes",
+          "name": "Classification of chemical chaperones based on their effect on protein folding landscapes",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2015",
+          "sameAs": "https://doi.org/10.1021/cb500798y",
+          "url": "https://doi.org/10.1021/cb500798y",
+          "publisher": {
+            "@type": "Organization",
+            "name": "ACS Chemical Biology"
+          },
+          "about": [
+            "Chemical Chaperones",
+            "Protein Folding Landscapes",
+            "Biophysics"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/intom",
+          "name": "intom",
+          "description": "Perturbational robustness estimation using integrative omics data.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/intom",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "integrative omics",
+            "perturbational robustness",
+            "cancer genomics",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/interpretable",
+          "name": "interpretable",
+          "description": "Toolkit for interpretable learning on graphs.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/interpretable",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "graph learning",
+            "interpretable machine learning",
+            "bioinformatics",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/beditor",
+          "name": "beditor",
+          "description": "A computational workflow for designing libraries of sgRNAs for CRISPR-mediated base editing.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/beditor",
+          "sameAs": "https://pypi.org/project/beditor/",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "CRISPR",
+            "base editing",
+            "guide RNA design",
+            "genomics",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/htsimaging",
+          "name": "htsimaging",
+          "description": "Python package for high-throughput single-cell imaging analysis.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/htsimaging",
+          "sameAs": "https://pypi.org/project/htsimaging/",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "high-throughput imaging",
+            "single-cell analysis",
+            "microscopy",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/chrov",
+          "name": "chrov",
+          "description": "Chromosome visualizations library in Python.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/chrov",
+          "sameAs": "https://pypi.org/project/chrov/",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "chromosome visualization",
+            "genomics",
+            "data visualization",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/parag",
+          "name": "parag",
+          "description": "Interactive visualization of higher-order graphs.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/parag",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "higher-order graphs",
+            "interactive graph visualization",
+            "network analysis",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/dseq",
+          "name": "dseq",
+          "description": "Deep sequencing analysis in Python dataframes.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/dseq",
+          "sameAs": "https://pypi.org/project/dseq/",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "deep sequencing",
+            "dataframes",
+            "bioinformatics",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/rraadd88/roux",
+          "name": "roux",
+          "description": "Convenience functions and utilities in Python for data science and computational biology.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/rraadd88/roux",
+          "sameAs": "https://pypi.org/project/roux/",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "convenience functions",
+            "data science",
+            "bioinformatics",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/baryshnikova-lab/safepy",
+          "name": "safepy",
+          "description": "Python implementation of Spatial Analysis of Functional Enrichment (SAFE).",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/baryshnikova-lab/safepy",
+          "contributor": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "functional enrichment",
+            "network biology",
+            "SAFE",
+            "python"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/asmeurer/removestar",
+          "name": "removestar",
+          "description": "Tool to automatically replace 'import *' in Python files with explicit imports.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/asmeurer/removestar",
+          "sameAs": "https://pypi.org/project/removestar/",
+          "contributor": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "code refactoring",
+            "python",
+            "explicit imports",
+            "developer tools"
+          ]
+        },
+        {
+          "@type": "SoftwareSourceCode",
+          "@id": "https://github.com/alexxijielu/yeast_segmentation",
+          "name": "yeast_segmentation",
+          "description": "User friendly mask-rcnn segmentation for images of yeast cells.",
+          "programmingLanguage": "Python",
+          "codeRepository": "https://github.com/alexxijielu/yeast_segmentation",
+          "contributor": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "keywords": [
+            "deep learning",
+            "mask-rcnn",
+            "image segmentation",
+            "yeast microscopy",
+            "python"
+          ]
+        },
+        {
+          "@type": "Article",
+          "@id": "https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/",
+          "headline": "Dismantling systemic ableism in health research",
+          "name": "Dismantling systemic ableism in health research",
+          "author": {
+            "@id": "https://rohandandage.github.io/#person"
+          },
+          "datePublished": "2023-11",
+          "url": "https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Policy Options (Institute for Research on Public Policy)"
+          },
+          "about": [
+            "Health Research",
+            "Systemic Ableism",
+            "Science Policy",
+            "Equity in Academia"
+          ]
+        }
+      ]
+    }
+    </script>
 </head>
 
 <body>
-    <aside class='intro'>
+    <aside class='intro' aria-hidden="true">
         <div class='logo'>
-          <img alt='' src='assets/splash.gif' width='300px'>
+          <img alt='Rohan Dandage intro animation' src='assets/splash.gif' width='300px'>
         </div>
         <span class='load'></span>
         <span class='background'></span>
     </aside>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>    
-    
-    <script>
-    </script>
-
     <!-- End intro -->
     <div id="projects">        
-        <div id="lead" style="height: 80vh;">
-            <div class="lead-box"">
-                <div class="border-left">
+        <div id="lead" class="relative flex-1 flex flex-col justify-center min-h-[70vh] min-h-[70dvh]">
+            <div class="lead-box">
+                <div class="border-left border-brand-lead pb-0">
                     <div class="row">
-                        <span class="big-text">
-                            <a href="#" style="color:black;pointer-events:none">Rohan Dandage</a>
-                        </span>
+                        <h1 class="big-text font-manjari text-lead-title">
+                            <span class="text-black block pb-0">Rohan Dandage</span>
+                            <span class="block font-normal text-brand-muted text-lead-link mt-1 pb-0">Systems biologist</span>
+                        </h1>
                     </div>
                 </div>
                 <div class="links">
-                    <div class="border-left">
+                    <div class="border-left border-brand-lead pb-0">
                         <!-- TODO: scroll smoothly -->
-                        <div class="row"><span class="mid-text">
-                            <a style="text-align:left" href="#research">Research🔬</a></span>
+                        <div class="row"><span class="mid-text font-manjari text-lead-link">
+                            <a class="portfolio-lead-link pb-0" href="#research">Research🔬</a></span>
                         </div> 
-                        <div class="row"><span class="mid-text">
-                            <a style="text-align:left" href="#coding">Coding 💻</a></span>
+                        <div class="row"><span class="mid-text font-manjari text-lead-link">
+                            <a class="portfolio-lead-link pb-0" href="#coding">Coding 💻</a></span>
                         </div>
-                        <div class="row"><span class="mid-text">
-                            <a style="text-align:left" href="#blogs">Writing 📝</a></span>
+                        <div class="row"><span class="mid-text font-manjari text-lead-link">
+                            <a class="portfolio-lead-link pb-0" href="#blogs">Writing 📝</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="project-footer">
-            <div style="display: flex;justify-content: flex-end;height: 5vh;">
+            <div class="flex justify-end min-h-[2rem] items-center">
             </div>
-            <div style="display: flex;justify-content: center;align-items: center;height: 15vh;">
-                <a href="#research" class="next_button next_button1">⬤</a>
+            <div class="flex justify-center items-center min-h-[3.5rem] py-2">
+                <a href="#research" class="next_button next_button1 portfolio-next-btn no-underline" aria-label="Scroll to research section">⬤</a>
             </div>
         </div>
     </div>
@@ -73,47 +623,26 @@
     
     <!-- Research -->   
     <div id="projects">
-        <div id="research">
+        <div id="research" class="flex-1 flex flex-col min-h-0 w-full">
             <div class="project-header">
                 <div class="art_small">
-                    <img class="art-image1" src="assets/research.svg.jpg" alt=""/>
+                    <img class="art-image1" src="assets/research.svg.jpg" alt="Research section illustration - biological and molecular networks"/>
                 </div>
                 <div>
-                    <h2 class="project-title">Research🔬</h2>
+                    <h2 class="project-title font-manjari text-section-title">Research🔬</h2>
                 </div>
             </div>
             <div class="art_and_gallery">
                 <div class="art">
-                    <img class="art-image1" src="assets/research.svg.jpg" alt=""/>
+                    <img class="art-image1" src="assets/research.svg.jpg" alt="Research section illustration - biological and molecular networks"/>
                 </div>
                 <div class="gallery">
                         <div class="gallery-controls">
-                            <div class="filter-btn-container">
+                            <div class="filter-btn-container" role="tablist" aria-label="Filter research categories">
                                 <!-- Filter buttons -->
-                                <button class="filter-btn" onclick="filterGallery('gallery1', 'cansynbio');toggleActive(this)">
-                                    <span class="mid-text"><a href="javascript:void(0);">Cancer systems biology</a></span>
-                                </button>
-                                <button class="filter-btn" onclick="filterGallery('gallery1', 'sysbio');toggleActive(this)">
-                                    <span class="mid-text"><a href="javascript:void(0);">Systems biology</a></span>
-                                </button>
-                                <button class="filter-btn" onclick="filterGallery('gallery1', 'biophy');toggleActive(this)">
-                                    <span class="mid-text"><a href="javascript:void(0);">Biophysics</a></span>
-                                </button>
-                                <button class="filter-btn" onclick="filterGallery('gallery1', 'all');toggleActive(this,'all')">
-                                    <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                                </button>
-                            </div>
-                            <div class="combo-button-group">
-                                <button aria-controls="gallery1" aria-label="Previous" class="js-carousel__button--prev" disabled="">
-                                    <span aria-hidden="true" class="icon-md-fill">
-                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
-                                    </span>
-                                </button>
-                                <button aria-controls="gallery1" aria-label="Next" class="js-carousel__button--next">
-                                    <span aria-hidden="true" class="icon-md-fill">
-                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
-                                    </span>
-                                </button>
+                                <button type="button" class="filter-btn portfolio-filter-btn" data-filter="cansynbio" role="tab" aria-selected="false">Cancer systems biology</button>
+                                <button type="button" class="filter-btn portfolio-filter-btn" data-filter="sysbio" role="tab" aria-selected="false">Systems biology</button>
+                                <button type="button" class="filter-btn portfolio-filter-btn" data-filter="biophy" role="tab" aria-selected="false">Biophysics</button>
                             </div>
                         </div>
                         <!-- Gallery 1 -->
@@ -123,12 +652,12 @@
                             <div class="gallery-item sysbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop6.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2016_01.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop6.jpg" alt="Cell Systems publication preview on multi-level integration" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2016_01.png" alt="Multi-level biological systems integration diagram" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Need for multi-level integration</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1016/j.cels.2016.01.010" target=”_blank”>Cell Systems↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1016/j.cels.2016.01.010" target="_blank" rel="noopener noreferrer">Cell Systems↗</a></div>
                                         <div class="gallery-item-job-title">2016</div>
                                     </div>    
                                 </li>
@@ -137,12 +666,12 @@
                             <div class="gallery-item cansynbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop6.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2026_01.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop6.jpg" alt="Recursive mutational robustness in cancer paper preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2026_01.png" alt="Intra- and inter-genic compensation in cancer paper diagram" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Recursive mutational robustness in cancer through intra- and inter-genic compensation</div>
-                                        <div class="gallery-item-details"><a href="https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1" target=”_blank”>bioRxiv↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://www.biorxiv.org/content/10.64898/2026.05.26.727768v1" target="_blank" rel="noopener noreferrer">bioRxiv↗</a><a href="https://doi.org/10.64898/2026.05.26.727768" target="_blank" rel="noopener noreferrer">DOI↗</a></div>
                                         <div class="gallery-item-job-title">2026</div>
                                     </div>    
                                 </li>
@@ -151,12 +680,12 @@
                             <div class="gallery-item cansynbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg"/>
+                                        <img class="gallery-item-static" src="assets/research_crop4.jpg" alt="Chromosome arm aneuploidies as genetic vulnerabilities preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg" alt="Chromosome arm aneuploidies study figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Chromosome arm aneuploidies as genetic vulnerabilities of triple-negative breast cancer</div>
-                                        <div class="gallery-item-details"><a href="https://doi.org/10.1158/1538-7445.AM2023-1413" target=”_blank”>Cancer Research↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1158/1538-7445.AM2023-1413" target="_blank" rel="noopener noreferrer">Cancer Research↗</a></div>
                                         <div class="gallery-item-job-title">2023</div>
                                     </div>    
                                 </li>
@@ -164,12 +693,12 @@
                             <div class="gallery-item sysbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop4.jpg" alt="Single-cell imaging of protein dynamics preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research_crop4.jpg" alt="Single-cell imaging of protein dynamics of paralogs figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Single-cell imaging of protein dynamics of paralogs reveals mechanisms of gene retention</div>
-                                        <div class="gallery-item-details"><a href="https://doi.org/10.1101/2023.11.23.568466" target=”_blank”>bioRχiv↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1101/2023.11.23.568466" target="_blank" rel="noopener noreferrer">bioRχiv↗</a></div>
                                         <div class="gallery-item-job-title">2023</div>
                                     </div>    
                                 </li>
@@ -177,12 +706,12 @@
                             <div class="gallery-item cansynbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop5.jpg" alt="Identifying features of genome evolution preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="Genome evolution features to exploit cancer vulnerabilities figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Identifying features of genome evolution to exploit cancer vulnerabilities</div>
-                                        <div class="gallery-item-details"><a href="https://doi.org/10.1016/j.cels.2021.08.007" target=”_blank”>Cell Systems↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1016/j.cels.2021.08.007" target="_blank" rel="noopener noreferrer">Cell Systems↗</a></div>
                                         <div class="gallery-item-job-title">2021</div>
                                     </div>    
                                 </li>
@@ -190,12 +719,12 @@
                             <div class="gallery-item sysbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop3.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research_crop3.jpg" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop3.jpg" alt="Chimeric complexes in yeast hybrid preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research_crop3.jpg" alt="Chimeric complexes in interspecies yeast hybrid protein interaction network" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Frequent assembly of chimeric complexes in the protein interaction network of an interspecies yeast hybrid</div>
-                                        <div class="gallery-item-details"><a href="https://doi.org/10.1093/molbev/msaa298" target=”_blank”>Molecular Biology and Evolution↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1093/molbev/msaa298" target="_blank" rel="noopener noreferrer">Molecular Biology and Evolution↗</a></div>
                                         <div class="gallery-item-job-title">2020</div>
                                     </div>    
                                 </li>
@@ -203,12 +732,12 @@
                             <div class="gallery-item cansynbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop5.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop5.jpg" alt="Paralog dependency and human cell robustness preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research_crop5.jpg" alt="Paralog dependency human cell robustness figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Paralog dependency indirectly affects the robustness of human cells</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.15252/msb.20198871" target=”_blank”>Molecular Systems Biology↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.15252/msb.20198871" target="_blank" rel="noopener noreferrer">Molecular Systems Biology↗</a></div>
                                         <div class="gallery-item-job-title">2019</div>
                                     </div>    
                                 </li>
@@ -216,12 +745,12 @@
                             <div class="gallery-item sysbio">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2018_02.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg" alt="beditor guide RNA design workflow preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2018_02.png" alt="beditor CRISPR base editing guide RNA design workflow diagram" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">beditor: A computational workflow for designing libraries of guide RNAs for CRISPR base editing</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1534/genetics.119.302089" target=”_blank”>Genetics↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1534/genetics.119.302089" target="_blank" rel="noopener noreferrer">Genetics↗</a></div>
                                         <div class="gallery-item-job-title">2019</div>
                                     </div>    
                                 </li>
@@ -229,12 +758,12 @@
                             <div class="gallery-item biophy">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2018_01.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg" alt="Molecular determinants of mutational fates preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2018_01.png" alt="Molecular determinants guiding environment-specific mutational fates diagram" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Differential strengths of molecular determinants guide environment specific mutational fates</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1371/journal.pgen.1007419" target=”_blank”>PLoS Genetics↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1371/journal.pgen.1007419" target="_blank" rel="noopener noreferrer">PLoS Genetics↗</a></div>
                                         <div class="gallery-item-job-title">2018</div>
                                     </div>    
                                 </li>
@@ -242,12 +771,12 @@
                             <div class="gallery-item biophy">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop2.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2016_02.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop2.jpg" alt="dms2dfe deep mutational scanning analysis preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2016_02.png" alt="dms2dfe deep mutational scanning workflow figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">dms2dfe : Comprehensive workflow for the analysis of deep mutational scanning data</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.21105/joss.00362" target=”_blank”>Journal of Open Source Software↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.21105/joss.00362" target="_blank" rel="noopener noreferrer">Journal of Open Source Software↗</a></div>
                                         <div class="gallery-item-job-title">2017</div>
                                     </div>    
                                 </li>
@@ -255,12 +784,12 @@
                             <div class="gallery-item biophy">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/research_crop1.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/research/2015_01.png" alt="" />
+                                        <img class="gallery-item-static" src="assets/research_crop1.jpg" alt="Chemical chaperones protein folding landscapes preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/research/2015_01.png" alt="Classification of chemical chaperones on protein folding landscapes figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Classification of chemical chaperones based on their effect on protein folding landscapes</div>
-                                        <div class="gallery-item-details"><a href="http://dx.doi.org/10.1021/cb500798y" target=”_blank”>ACS chemical biology↗</a></div>
+                                        <div class="gallery-item-details"><a href="https://doi.org/10.1021/cb500798y" target="_blank" rel="noopener noreferrer">ACS chemical biology↗</a></div>
                                         <div class="gallery-item-job-title">2015</div>
                                     </div>    
                                 </li>
@@ -272,12 +801,12 @@
             <!-- end of art_gallery -->
         </div>
         <div class="project-footer">
-            <div style="display: flex;justify-content: flex-end;height: 5vh;">
-                <a href="https://scholar.google.ca/citations?hl=en&user=ZCg1Lq8AAAAJ&view_op=list_works&sortby=pubdate" target=”_blank”
-                class="mid-text link"><i class="fa-brands fa-google"></i> Scholar↗</a>
+            <div class="flex justify-end min-h-[2rem] items-center">
+                <a href="https://scholar.google.ca/citations?hl=en&user=ZCg1Lq8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer"
+                class="portfolio-external-link">Scholar↗</a>
             </div>
-            <div style="display: flex;justify-content: center;align-items: center;height: 15vh;">
-                <a class="next_button" href="#coding">⬤</a>
+            <div class="flex justify-center items-center min-h-[3.5rem] py-2">
+                <a class="next_button portfolio-next-btn no-underline" href="#coding" aria-label="Scroll to coding section">⬤</a>
             </div>
         </div>
     </div>
@@ -287,44 +816,23 @@
         <div id="coding">
             <div class="project-header">
                 <div class="art_small">
-                    <img class="art-image1" src="assets/coding.svg.jpg" alt=""/>
+                    <img class="art-image1" src="assets/coding.svg.jpg" alt="Coding section illustration - computational biology tools and software packages"/>
                 </div>
                 <div>
-                    <h2 class="project-title">Coding💻</h2>
+                    <h2 class="project-title font-manjari text-section-title">Coding💻</h2>
                 </div>
             </div>            
         <div class="art_and_gallery">
             <div class="art">
-                <img class="art-image1" src="assets/coding.svg.jpg" alt=""/>
+                <img class="art-image1" src="assets/coding.svg.jpg" alt="Coding section illustration - computational biology tools and software packages"/>
             </div>
             <div class="gallery">
                     <div class="gallery-controls">
-                        <div class="filter-btn-container">
+                        <div class="filter-btn-container" role="tablist" aria-label="Filter coding project categories">
                             <!-- Filter buttons -->
-                            <button class="filter-btn" onclick="filterGallery('gallery2', 'tools');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Methods</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery2', 'viz');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Visualizations</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery2', 'co');toggleActive(this)">
-                                <span class="mid-text"><a href="javascript:void(0);">Collaborations</a></span>
-                            </button>
-                            <button class="filter-btn" onclick="filterGallery('gallery2', 'all');toggleActive(this,'all')">
-                                <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                            </button>
-                        </div>
-                        <div class="combo-button-group">
-                            <button aria-controls="gallery2" aria-label="Previous" class="js-carousel__button--prev" disabled="">
-                                <span aria-hidden="true" class="icon-md-fill">
-                                    <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
-                                </span>
-                            </button>
-                            <button aria-controls="gallery2" aria-label="Next" class="js-carousel__button--next">
-                                <span aria-hidden="true" class="icon-md-fill">
-                                    <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
-                                </span>
-                            </button>
+                            <button type="button" class="filter-btn portfolio-filter-btn" data-filter="tools" role="tab" aria-selected="false">Methods</button>
+                            <button type="button" class="filter-btn portfolio-filter-btn" data-filter="viz" role="tab" aria-selected="false">Visualizations</button>
+                            <button type="button" class="filter-btn portfolio-filter-btn" data-filter="co" role="tab" aria-selected="false">Collaborations</button>
                         </div>
                     </div>
                     <!-- Gallery 1 -->
@@ -333,13 +841,13 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/E267.svg"/>
+                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg" alt="intom integrative omics package preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/E267.svg" alt="intom integrative omics icon" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">intom⿻<br>Perturbational robustness estimation using integrative omics data</div>
                                         <div class="gallery-item-details">
-                                            <a href="https://github.com/rraadd88/intom" target=”_blank”>Source↗</a>
+                                            <a href="https://github.com/rraadd88/intom" target="_blank" rel="noopener noreferrer">Source↗</a>
                                         </div>
                                 </div>
                             </li>
@@ -347,13 +855,13 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F334.svg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg" alt="interpretable toolkit for graphs preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F334.svg" alt="interpretable graph learning toolkit icon" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">interpretable🧰<br>toolkit for interpretable learning on graphs</div>
                                     <div class="gallery-item-details">
-                                        <a href="https://github.com/rraadd88/interpretable" target=”_blank”>Source↗</a>
+                                        <a href="https://github.com/rraadd88/interpretable" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -361,14 +869,14 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/E267.svg"/>
+                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg" alt="beditor sgRNA library design workflow preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/E267.svg" alt="beditor CRISPR base editing workflow icon" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">beditor🔂<br>A computational workflow for designing libraries of sgRNAs for CRISPR-mediated base editing (and much more)</div>
                                         <div class="gallery-item-details">
-                                            <a href="https://pypi.org/project/beditor" target=”_blank”>Package↗</a>
-                                            <a href="https://github.com/rraadd88/beditor" target=”_blank”>Source↗</a>
+                                            <a href="https://pypi.org/project/beditor" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                            <a href="https://github.com/rraadd88/beditor" target="_blank" rel="noopener noreferrer">Source↗</a>
                                         </div>
                                 </div>    
                             </li>
@@ -377,14 +885,14 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F52C.svg"/>
+                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg" alt="htsimaging high-throughput microscopy package preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F52C.svg" alt="Microscope icon for htsimaging single-cell imaging package" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">htsimaging🔬<br>Python package for high-throughput single-cell imaging analysis</div>
                                         <div class="gallery-item-details">
-                                            <a href="https://pypi.org/project/htsimaging" target=”_blank”>Package↗</a>
-                                            <a href="https://github.com/rraadd88/htsimaging" target=”_blank”>Source↗</a>
+                                            <a href="https://pypi.org/project/htsimaging" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                            <a href="https://github.com/rraadd88/htsimaging" target="_blank" rel="noopener noreferrer">Source↗</a>
                                         </div>
                                 </div>    
                             </li>
@@ -393,14 +901,14 @@
                         <div class="gallery-item viz">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9EC.svg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg" alt="chrov chromosome visualization library preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9EC.svg" alt="DNA icon for chrov chromosome visualizations package" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">chrov🧬<br>Chromosome Visualizations</div>
                                         <div class="gallery-item-details">
-                                            <a href="https://pypi.org/project/chrov" target=”_blank”>Package↗</a>
-                                            <a href="https://github.com/rraadd88/chrov" target=”_blank”>Source↗</a>
+                                            <a href="https://pypi.org/project/chrov" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                            <a href="https://github.com/rraadd88/chrov" target="_blank" rel="noopener noreferrer">Source↗</a>
                                         </div>
                                 </div>    
                             </li>
@@ -408,13 +916,13 @@
                         <div class="gallery-item viz">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F386.svg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg" alt="parag higher-order graph visualization preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F386.svg" alt="Fireworks icon for parag interactive graph visualization" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">parag🎆<br>Interactive visualization of higher-order graphs</div>
                                         <div class="gallery-item-details">
-                                            <a href="https://github.com/rraadd88/parag" target=”_blank”>Source↗</a>
+                                            <a href="https://github.com/rraadd88/parag" target="_blank" rel="noopener noreferrer">Source↗</a>
                                         </div>
                                 </div>    
                             </li>
@@ -423,14 +931,14 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9F1.svg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg" alt="dseq deep sequencing analysis preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9F1.svg" alt="Bricks icon for dseq deep sequencing package" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">dseq🧱<br>Deep sequencing analysis in dataframes</div>
                                     <div class="gallery-item-details">
-                                        <a href="https://pypi.org/project/dseq" target=”_blank”>Package↗</a>
-                                        <a href="https://github.com/rraadd88/dseq" target=”_blank”>Source↗</a>
+                                        <a href="https://pypi.org/project/dseq" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                        <a href="https://github.com/rraadd88/dseq" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -438,14 +946,14 @@
                         <div class="gallery-item tools">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg"/>
-                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9F0.svg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop3.jpg" alt="roux Python convenience utilities preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://openmoji.org/data/color/svg/1F9F0.svg" alt="Toolbox icon for roux Python convenience functions" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">roux🧰<br>Convenience functions in Python</div>
                                     <div class="gallery-item-details">
-                                        <a href="https://pypi.org/project/roux" target=”_blank”>Package↗</a>
-                                        <a href="https://github.com/rraadd88/roux" target=”_blank”>Source↗</a>
+                                        <a href="https://pypi.org/project/roux" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                        <a href="https://github.com/rraadd88/roux" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -454,14 +962,13 @@
                         <div class="gallery-item co">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop4.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/coding_crop4.jpg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop4.jpg" alt="safepy functional enrichment tool preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="assets/coding_crop4.jpg" alt="safepy spatial analysis of functional enrichment diagram" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">safepy🕸️<br>Python implementation of Spatial Analysis of Functional Enrichment (SAFE)</div>
                                     <div class="gallery-item-details">
-                                        <!-- <a href="https://pypi.org/project/safepy" target=”_blank”>Package↗ -->
-                                        <a href="https://github.com/baryshnikova-lab/safepy" target=”_blank”>Source↗</a>
+                                        <a href="https://github.com/baryshnikova-lab/safepy" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -469,14 +976,14 @@
                         <div class="gallery-item co">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop5.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/coding_crop5.jpg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop5.jpg" alt="removestar Python explicit imports tool preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="assets/coding_crop5.jpg" alt="removestar code refactoring tool demonstration" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">removestar*️⃣<br>Tool to automatically replace 'import *' in Python files with explicit imports</div>
                                     <div class="gallery-item-details">
-                                        <a href="https://pypi.org/project/removestar" target=”_blank”>Package↗</a>
-                                        <a href="https://github.com/asmeurer/removestar" target=”_blank”>Source↗</a>
+                                        <a href="https://pypi.org/project/removestar" target="_blank" rel="noopener noreferrer">Package↗</a>
+                                        <a href="https://github.com/asmeurer/removestar" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -484,14 +991,13 @@
                         <div class="gallery-item co">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/coding_crop6.jpg" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop6.jpg" alt="yeast_segmentation deep learning package preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="assets/coding_crop6.jpg" alt="yeast cell mask-rcnn segmentation model output" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">yeast_segmentation🔬<br>User friendly mask-rcnn segmentation for images of yeast cells</div>
                                     <div class="gallery-item-details">
-                                        <!-- <a href="https://pypi.org/project/removestar" target=”_blank”>Package↗ -->
-                                        <a href="https://github.com/alexxijielu/yeast_segmentation" target=”_blank”>Source↗</a>
+                                        <a href="https://github.com/alexxijielu/yeast_segmentation" target="_blank" rel="noopener noreferrer">Source↗</a>
                                     </div>
                                 </div>    
                             </li>
@@ -499,14 +1005,29 @@
                         <div class="gallery-item viz">
                             <li class="gallery-item-container">
                                 <div class="gallery-item-img-wrapper">
-                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg"/>
-                                    <img class="gallery-item-animated" src="assets/coding/website.png" alt="" />
+                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg" alt="Portfolio website static screenshot preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="https://coresia.org/assets/logo.webp" alt="Coresia website preview" loading="lazy" />
+                                </div>
+                                <div class="gallery-item-container-text-textbox">
+                                    <div class="gallery-item-full-name">Coresia.org website</div>
+                                    <div class="gallery-item-details">
+                                        <a href="https://coresia.org" target="_blank" rel="noopener noreferrer">Website↗</a>
+                                    </div>
+                                <div class="gallery-item-job-title">Vite-Node build, Tailwind front, JS-TS middle, Firebase back</div>
+                                </div>    
+                            </li>
+                        </div>
+                        <div class="gallery-item viz">
+                            <li class="gallery-item-container">
+                                <div class="gallery-item-img-wrapper">
+                                    <img class="gallery-item-static" src="assets/coding_crop1.jpg" alt="Portfolio website static screenshot preview" loading="lazy" />
+                                    <img class="gallery-item-animated" src="assets/coding/website.png" alt="Rohan Dandage academic portfolio website preview" loading="lazy" />
                                 </div>
                                 <div class="gallery-item-container-text-textbox">
                                     <div class="gallery-item-full-name">This website</div>
                                     <div class="gallery-item-details">
-                                        <a href="https://github.com/RohanDandage/RohanDandage.github.io" target=”_blank”>Source↗</a>
-                                        <a href="https://github.com/RyanFitzgerald/devportfolio" target=”_blank”>Forked from↗</a>
+                                        <a href="https://github.com/RohanDandage/RohanDandage.github.io" target="_blank" rel="noopener noreferrer">Source↗</a>
+                                        <a href="https://github.com/RyanFitzgerald/devportfolio" target="_blank" rel="noopener noreferrer">Forked from↗</a>
                                     </div>
                                 <div class="gallery-item-job-title">JavaScript, CSS</div>
                                 </div>    
@@ -519,11 +1040,11 @@
         <!-- end of art_gallery -->
         </div>
         <div class="project-footer">
-            <div style="display: flex;justify-content: flex-end;height: 5vh;">
-                <a href="https://github.com/rraadd88" target=”_blank” class="mid-text link"><i class="fa-brands fa-square-github" aria-hidden="true"></i> GitHub↗</a>
+            <div class="flex justify-end min-h-[2rem] items-center">
+                <a href="https://github.com/rraadd88" target="_blank" rel="noopener noreferrer" class="portfolio-external-link">GitHub↗</a>
             </div>
-            <div style="display: flex;justify-content: center;align-items: center;height: 15vh;">
-                <a class="next_button" href="#blogs">⬤</a>
+            <div class="flex justify-center items-center min-h-[3.5rem] py-2">
+                <a class="next_button portfolio-next-btn no-underline" href="#blogs" aria-label="Scroll to writing section">⬤</a>
             </div>
         </div>
     </div>
@@ -534,42 +1055,23 @@
         <div id="blogs">
             <div class="project-header">
                 <div class="art_small">
-                    <img class="art-image1" src="assets/decoding.svg.jpg" alt=""/>
+                    <img class="art-image1" src="assets/decoding.svg.jpg" alt="Writing section illustration - essays, science communication, and policy analysis"/>
                 </div>
                 <div>
-                    <h2 class="project-title">Writing📝</h2>
+                    <h2 class="project-title font-manjari text-section-title">Writing📝</h2>
                 </div>
             </div>
             <div class="art_and_gallery">
                 <div class="art">
-                    <img class="art-image1" src="assets/decoding.svg.jpg" alt=""/>
+                    <img class="art-image1" src="assets/decoding.svg.jpg" alt="Writing section illustration - essays, science communication, and policy analysis"/>
                 </div>
                 <!-- Gallery 3 -->
                 <div class="gallery">
                         <div class="gallery-controls">
-                            <div class="filter-btn-container">
+                            <div class="filter-btn-container" role="tablist" aria-label="Filter writing categories">
                                 <!-- Filter buttons -->
-                                <button class="filter-btn" onclick="filterGallery('gallery3', 'short');toggleActive(this)">
-                                    <span class="mid-text"><a href="javascript:void(0);">Short-form</a></span>
-                                </button>
-                                <button class="filter-btn" onclick="filterGallery('gallery3', 'long');toggleActive(this)">
-                                    <span class="mid-text"><a href="javascript:void(0);">Long-form</a></span>
-                                </button>
-                                <button class="filter-btn" onclick="filterGallery('gallery3', 'all');toggleActive(this,'all')">
-                                    <span class="mid-text"><a href="javascript:void(0);">↺</a></span>
-                                </button>
-                            </div>
-                            <div class="combo-button-group">
-                                <button aria-controls="gallery3" aria-label="Previous" class="js-carousel__button--prev" disabled="">
-                                    <span aria-hidden="true" class="icon-md-fill">
-                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M560.62-253.85 333.85-480.62l226.77-227.15 32.61 32.62-194.15 194.53 194.15 194.16-32.61 32.61Z"></path></svg>
-                                    </span>
-                                </button>
-                                <button aria-controls="gallery3" aria-label="Next" class="js-carousel__button--next">
-                                    <span aria-hidden="true" class="icon-md-fill">
-                                        <svg viewBox="0 -960 960 960" aria-hidden="true" fill="currentColor" height="24px" role="presentation" width="24px" xmlns="http://www.w3.org/2000/svg"><path d="M536.92-480.62 342.77-675.15l32.61-32.62 226.77 227.15-226.77 226.77-32.61-32.61 194.15-194.16Z"></path></svg>
-                                    </span>
-                                </button>
+                                <button type="button" class="filter-btn portfolio-filter-btn" data-filter="short" role="tab" aria-selected="false">Short-form</button>
+                                <button type="button" class="filter-btn portfolio-filter-btn" data-filter="long" role="tab" aria-selected="false">Long-form</button>
                             </div>
                         </div>
                         <!-- Gallery items -->
@@ -578,8 +1080,42 @@
                             <div class="gallery-item short">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg"/>
+                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg"  loading="lazy" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Fostering AI talent through a community-grounded approach</div>
+                                            <div class="gallery-item-details">
+                                                <a href="https://sciencepolicy.ca/posts/fostering-ai-talent-through-a-community-grounded-approach/" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-lines" aria-hidden="true"></i>↗</a>
+                                                <a href="https://lnkd.in/p/gmQdpA7n" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
+                                            </div>
+                                        <div class="gallery-item-job-title">2023</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item short">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg" alt="Dismantling systemic ableism in health research preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="https://policyoptions.irpp.org/wp-content/uploads/sites/2/2023/11/Dismantling-systemic-ableism-in-health-research.jpg" alt="Dismantling systemic ableism in health research Policy Options cover image" loading="lazy" />
+                                    </div>
+                                    <div class="gallery-item-container-text-textbox">
+                                        <div class="gallery-item-full-name">Dismantling systemic ableism in health research</div>
+                                            <div class="gallery-item-details">
+                                                <a href="https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target="_blank" rel="noopener noreferrer"><i class="fa fa-file-lines" aria-hidden="true"></i>↗</a>
+                                                <a href="https://twitter.com/AbleismAcademia/status/1728095925720010918" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter" aria-hidden="true"></i>↗</a>
+                                                <a href="https://www.linkedin.com/pulse/dismantling-systemic-ableism-health-q0ine/?trk=article-ssr-frontend-pulse_more-articles_related-content-card" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
+                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook" aria-hidden="true"></i>↗</a>
+                                            </div>
+                                        <div class="gallery-item-job-title">2023</div>
+                                    </div>    
+                                </li>
+                            </div>
+                            <div class="gallery-item short">
+                                <li class="gallery-item-container">
+                                    <div class="gallery-item-img-wrapper">
+                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg" alt="Promoting public participation in research article preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg" alt="Public participation in scientific research graphic" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">Promoting public participation in research</div>
@@ -593,8 +1129,8 @@
                             <div class="gallery-item short">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg"/>
+                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg" alt="Parallels between levels of biological organizations essay preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg" alt="Levels of biological organization conceptual figure" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">On the parallels between levels of biological organizations</div>
@@ -607,8 +1143,8 @@
                             <div class="gallery-item short">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg"/>
+                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg" alt="On ableism survivorship article preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/decoding_crop4.jpg" alt="Ableism survivorship in academia illustration" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">On ableism survivorship</div>
@@ -618,34 +1154,17 @@
                                     </div>    
                                 </li>
                             </div>
-                            <div class="gallery-item short">
-                                <li class="gallery-item-container">
-                                    <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/decoding_crop4.jpg"/>
-                                        <img class="gallery-item-animated" src="https://policyoptions.irpp.org/wp-content/uploads/sites/2/2023/11/Dismantling-systemic-ableism-in-health-research.jpg"/>
-                                    </div>
-                                    <div class="gallery-item-container-text-textbox">
-                                        <div class="gallery-item-full-name">Dismantling systemic ableism in health research</div>
-                                            <div class="gallery-item-details">
-                                                <a href="https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target=”_blank”><i class="fa fa-file-lines" aria-hidden="true"></i>↗</a>
-                                                <a href="https://twitter.com/AbleismAcademia/status/1728095925720010918" target=”_blank”><i class="fa-brands fa-twitter" aria-hidden="true"></i>↗</a>
-                                                <a href="https://www.linkedin.com/pulse/dismantling-systemic-ableism-health-q0ine/?trk=article-ssr-frontend-pulse_more-articles_related-content-card" target=”_blank”><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
-                                                <a href="https://www.facebook.com/sharer/sharer.php?u=https://policyoptions.irpp.org/magazines/november-2023/systemic-ableism/" target=”_blank”><i class="fa-brands fa-facebook" aria-hidden="true"></i>↗</a>
-                                            </div>
-                                        <div class="gallery-item-job-title">2023</div>
-                                    </div>    
-                                </li>
-                            </div>
+
                             <div class="gallery-item long">
                                 <li class="gallery-item-container">
                                     <div class="gallery-item-img-wrapper">
-                                        <img class="gallery-item-static" src="assets/decoding.svg.jpg"/>
-                                        <img class="gallery-item-animated" src="assets/decoding.svg.jpg"/>
+                                        <img class="gallery-item-static" src="assets/decoding.svg.jpg" alt="The Algorithms of Ableism article preview" loading="lazy" />
+                                        <img class="gallery-item-animated" src="assets/decoding.svg.jpg" alt="The Algorithms of Ableism conceptual illustration" loading="lazy" />
                                     </div>
                                     <div class="gallery-item-container-text-textbox">
                                         <div class="gallery-item-full-name">The Algorithms of Ableism</div>
                                             <div class="gallery-item-details">
-                                                <!-- <a href="https://pypi.org/project/htsimaging" target=”_blank”>Package↗ -->
+                                                <!-- <a href="https://pypi.org/project/htsimaging" target="_blank" rel="noopener noreferrer">Package↗ -->
                                             </div>
                                         <div class="gallery-item-job-title">TBA</div>
                                     </div>    
@@ -657,10 +1176,10 @@
             <!-- end of gallery -->
         </div>
         <div class="project-footer">
-            <div style="display: flex;justify-content: flex-end;height: 5vh;">
+            <div class="flex justify-end min-h-[2rem] items-center">
             </div>
-            <div style="display: flex;justify-content: center;align-items: center;height: 15vh;">
-                <a class="next_button" href="#contact">⬤</a>
+            <div class="flex justify-center items-center min-h-[3.5rem] py-2">
+                <a class="next_button portfolio-next-btn no-underline" href="#contact" aria-label="Scroll to contact section">⬤</a>
             </div>
         </div>
     </div>
@@ -668,33 +1187,39 @@
     <hr class='sep'>
 
     <div id="projects">
-        <div id="contact" style="display: flex;height:80vh;flex-direction: column;justify-content: center;align-items: center;flex-wrap: nowrap;">
-            <div class="row">
-                <h2 class="big-text" style="margin-bottom: 50px;color:#000000"><br><br></h2>
-            </div>
-            <div style="display: flex; flex-direction: column;flex-wrap: nowrap;">            
-                <div class="row">
-                    <div style="text-align: center; font-size: 50px;justify-content: center;align-content: center;">
-                        <a href="https://www.linkedin.com/in/rohan-dandage-6b8607276" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
-                        <a href="https://bsky.app/profile/rohandandage.bsky.social" target="_blank"><i class="fa-brands fa-bluesky" aria-hidden="true"></i>↗</a>
-                        <a href="https://substack.com/@embiosys" target="_blank"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>↗</a>
-                        <a href="https://github.com/rraadd88" target="_blank"><i class="fa-brands fa-square-github" aria-hidden="true"></i>↗</a>
+        <div id="contact" class="flex flex-col justify-center items-center flex-nowrap flex-1 min-h-[70vh] min-h-[70dvh] w-full max-w-full px-4 text-center mx-auto">
+            <div class="flex flex-col flex-nowrap w-full max-w-md md:max-w-xl mx-auto items-center justify-center text-center">            
+                <div class="row w-full flex justify-center text-center mx-auto">
+                    <div class="text-center w-full mx-auto flex justify-center items-center content-center flex-wrap gap-4 min-[380px]:gap-6 md:gap-8 text-[34px] min-[380px]:text-[42px] md:text-[50px] text-brand-navy no-underline [&_a]:no-underline [&_a]:text-brand-navy">
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://coresia.org" target="_blank" rel="noopener noreferrer" title="coresia"><img src="https://coresia.org/assets/logo.webp" alt="coresia" class="w-[1em] h-[1em] object-contain inline-block" />↗</a>
+                    </div>
+                    <div class="text-center w-full mx-auto flex justify-center items-center content-center flex-wrap gap-4 min-[380px]:gap-6 md:gap-8 text-[34px] min-[380px]:text-[42px] md:text-[50px] text-brand-navy no-underline [&_a]:no-underline [&_a]:text-brand-navy">
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://orcid.org/0000-0002-6421-2067" target="_blank" rel="noopener noreferrer" title="ORCID"><i class="fa-brands fa-orcid" aria-hidden="true"></i>↗</a>
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://scholar.google.ca/citations?hl=en&user=ZCg1Lq8AAAAJ&view_op=list_works&sortby=pubdate" target="_blank" rel="noopener noreferrer" title="Google Scholar"><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i>↗</a>
+                        <!-- <a class="portfolio-social-link text-brand-navy no-underline" href="https://www.researchgate.net/scientific-contributions/Rohan-Dandage-2060337992" target="_blank" rel="noopener noreferrer" title="ResearchGate"><i class="fa-brands fa-researchgate" aria-hidden="true"></i>↗</a> -->
+                    </div>
+                    <div class="text-center w-full mx-auto flex justify-center items-center content-center flex-wrap gap-4 min-[380px]:gap-6 md:gap-8 text-[34px] min-[380px]:text-[42px] md:text-[50px] text-brand-navy no-underline [&_a]:no-underline [&_a]:text-brand-navy">
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://www.linkedin.com/in/rohan-dandage-6b8607276" target="_blank" rel="noopener noreferrer" title="LinkedIn"><i class="fa-brands fa-linkedin" aria-hidden="true"></i>↗</a>
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://bsky.app/profile/rohandandage.bsky.social" target="_blank" rel="noopener noreferrer" title="Bluesky"><i class="fa-brands fa-bluesky" aria-hidden="true"></i>↗</a>
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://substack.com/@embiosys" target="_blank" rel="noopener noreferrer" title="Substack"><i class="fa-solid fa-bookmark" aria-hidden="true"></i>↗</a>
+                    </div>
+                    <div class="text-center w-full mx-auto flex justify-center items-center content-center flex-wrap gap-4 min-[380px]:gap-6 md:gap-8 text-[34px] min-[380px]:text-[42px] md:text-[50px] text-brand-navy no-underline [&_a]:no-underline [&_a]:text-brand-navy">
+                        <a class="portfolio-social-link text-brand-navy no-underline" href="https://github.com/rraadd88" target="_blank" rel="noopener noreferrer" title="GitHub"><i class="fa-brands fa-square-github" aria-hidden="true"></i>↗</a>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="project-footer">
-            <div style="display: flex;justify-content: center;height: 5vh;">
-                <p style="color:#808080;text-align: center;">
-                    Copyright &copy; <span id="current-year"><script>document.write(/\d{4}/.exec(Date())[0])</script></span> Rohan Dandage
+        <div class="project-footer w-full flex flex-col justify-center items-center text-center px-4 mx-auto">
+            <div class="flex justify-center items-center w-full text-center min-h-[2rem] py-1">
+                <p class="text-brand-muted text-center font-manjari text-caption w-full mx-auto">
+                    Copyright &copy; <span id="current-year">2026</span> Rohan Dandage
                 </p>
             </div>
-            <div style="display: flex;justify-content: center;align-items: center;height: 15vh;">
-                <a href="#" class="next_button">⬤</a>                
+            <div class="flex justify-center items-center w-full mx-auto self-center text-center min-h-[3.5rem] py-2">
+                <a href="#" class="next_button portfolio-next-btn mx-auto text-center no-underline" aria-label="Back to top">⬤</a>
             </div>
         </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/backend.js"></script>
 </body>
 
