@@ -102,6 +102,7 @@
   border-left: clamp(10px, 1.6vw, 16px) solid var(--color-brand-navy);
   margin-left: clamp(6px, 1.5vw, 18px);
   padding-left: clamp(16px, 3vw, 32px);
+  padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
@@ -213,7 +214,7 @@
 
   .links {
     margin-top: clamp(12px, 2vh, 20px);
-    line-height: clamp(1.6em, 2.5vw, 2em);
+    line-height: normal;
   }
 
   #research {
@@ -283,7 +284,9 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow-x: auto;
+    min-width: 0;
+    max-width: 100%;
+    overflow: visible;
   }
 
   .project-footer {
@@ -363,17 +366,23 @@
   .gallery-container {
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
     gap: 0;
     height: 100%;
     min-height: clamp(280px, 45vh, 380px);
     max-height: clamp(340px, 55vh, 420px);
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     overflow-x: auto;
+    overflow-y: hidden !important;
+    overscroll-behavior-x: contain;
+    overscroll-behavior-y: none;
     user-select: none;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
-    touch-action: pan-y pinch-zoom;
+    touch-action: pan-x pan-y;
     cursor: grab;
+    box-sizing: border-box;
   }
 
   .gallery-container.is-dragging {
@@ -391,9 +400,11 @@
     position: relative;
     flex: 0 0 clamp(260px, 78vw, 360px);
     max-width: 85vw;
+    max-height: 100%;
     padding: clamp(10px, 2.5vw, 24px);
     scroll-snap-align: start;
     scroll-snap-stop: normal;
+    box-sizing: border-box;
     @apply transition-colors duration-200;
   }
 
@@ -526,12 +537,40 @@
     border: 1px solid rgba(0, 0, 128, 0.12);
   }
 
-  .gallery-item-container-text-textbox:hover .gallery-item-details {
+  /* Reveal on hover for mouse users */
+  .gallery-item-container:hover .gallery-item-details:has(a),
+  .gallery-item-container-text-textbox:hover .gallery-item-details:has(a) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 4px;
+  }
+
+  /* Reveal on keyboard focus navigation */
+  .gallery-item-container:focus-within .gallery-item-details:has(a) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+  }
+
+  /* Always visible on touchscreens / devices without hover capability */
+  @media (hover: none), (pointer: coarse) {
+    .gallery-item-details:has(a) {
+      display: flex !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 6px;
+      padding: 6px 8px;
+    }
+
+    .gallery-item-details a {
+      min-height: 38px;
+      padding: 6px 12px;
+    }
   }
 
   .gallery-item-container:hover .gallery-item-static {

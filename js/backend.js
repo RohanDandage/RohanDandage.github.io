@@ -176,6 +176,7 @@
 
       // 2. Auto-Reset: Reset scroll position to 0 so cards start cleanly at the beginning
       this.container.scrollLeft = 0;
+      this.container.scrollTop = 0;
 
       // 3. Isolated Chip State: Strictly update only this gallery's chips
       let activeLabel = 'All';
@@ -298,8 +299,13 @@
         }
       });
 
-      // 2. Passive scroll listener with requestAnimationFrame throttling
-      this.container.addEventListener('scroll', () => this.scheduleControlUpdate(), { passive: true });
+      // 2. Passive scroll listener with requestAnimationFrame throttling & vertical lockdown
+      this.container.addEventListener('scroll', () => {
+        if (this.container.scrollTop !== 0) {
+          this.container.scrollTop = 0;
+        }
+        this.scheduleControlUpdate();
+      }, { passive: true });
 
       // 3. Pointer-based mouse drag-to-scroll with threshold check
       let isPointerDown = false;
@@ -314,17 +320,14 @@
         if (e.pointerType === 'touch') return;
         if (e.button !== 0) return; // Only primary mouse button
 
+        // If the user clicked directly on an interactive element, do not initiate container drag
+        if (e.target.closest('a, button')) return;
+
         isPointerDown = true;
         hasDraggedPastThreshold = false;
         dragDistance = 0;
         startX = e.clientX;
         startScrollLeft = this.container.scrollLeft;
-
-        if (this.container.setPointerCapture) {
-          try {
-            this.container.setPointerCapture(e.pointerId);
-          } catch (_) {}
-        }
       });
 
       this.container.addEventListener('pointermove', (e) => {
@@ -336,6 +339,13 @@
         if (!hasDraggedPastThreshold && dragDistance > DRAG_THRESHOLD) {
           hasDraggedPastThreshold = true;
           this.container.classList.add('is-dragging');
+
+          // Dynamically capture pointer only after actual drag motion begins
+          if (this.container.setPointerCapture) {
+            try {
+              this.container.setPointerCapture(e.pointerId);
+            } catch (_) {}
+          }
         }
 
         if (hasDraggedPastThreshold) {
@@ -351,7 +361,9 @@
 
         if (this.container.releasePointerCapture && e && e.pointerId) {
           try {
-            this.container.releasePointerCapture(e.pointerId);
+            if (this.container.hasPointerCapture && this.container.hasPointerCapture(e.pointerId)) {
+              this.container.releasePointerCapture(e.pointerId);
+            }
           } catch (_) {}
         }
 
@@ -371,9 +383,9 @@
       this.container.addEventListener('pointerup', endPointerDrag);
       this.container.addEventListener('pointercancel', endPointerDrag);
 
-      // 4. Suppress accidental link clicks when dragging cards
+      // 4. Suppress accidental link clicks ONLY when dragging cards
       this.container.addEventListener('click', (e) => {
-        if (hasDraggedPastThreshold || dragDistance > DRAG_THRESHOLD) {
+        if (hasDraggedPastThreshold) {
           e.preventDefault();
           e.stopPropagation();
         }
@@ -483,6 +495,36 @@
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+  });
+
+  // Delegated Link Activation: Fallback for sandboxed iframe environments
+  document.addEventListener('click', function(e) {
+    // Only handle primary click without modifier keys
+    if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+
+    const link = e.target.closest('a[target="_blank"]');
+    if (!link) return;
+
+    const href = link.href;
+    if (!href || href.startsWith('#') || href.startsWith('javascript:')) return;
+
+    // Check if running inside an iframe (e.g. AI Studio preview environment)
+    let isInsideIframe = false;
+    try {
+      isInsideIframe = window.self !== window.top;
+    } catch (_) {
+      isInsideIframe = true;
+    }
+
+    if (isInsideIframe) {
+      try {
+        window.open(href, '_blank', 'noopener,noreferrer');
+        e.preventDefault();
+      } catch (err) {
+        // Fallback to default browser anchor navigation if window.open throws
+        console.warn('[navigation] window.open failed, falling back to default anchor:', err);
       }
     }
   });
