@@ -217,7 +217,9 @@
     line-height: normal;
   }
 
-  #research {
+  #research,
+  #coding,
+  #blogs {
     display: flex;
     flex-direction: column;
     flex: 1 1 auto;
@@ -283,6 +285,7 @@
     flex: 1;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
     min-width: 0;
     max-width: 100%;
